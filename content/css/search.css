@@ -1,0 +1,138 @@
+#container mark{
+	background: #FFF;
+	color:#FE6665;
+}
+
+.head-search{
+    background-image: url("../images/label-bg.jpg");
+    height: 0px;
+}
+.head-search .head-content{
+    width:950px;
+    margin:25px auto;
+    position: relative;;
+}
+.head-search .head-img{
+    border:3px solid #FFF;
+}
+.head-search .max-tag{
+    position: absolute;
+    left:150px;
+    top: 45px;
+}
+#search-box{
+	height:60px;
+	text-indent: 15px;
+	line-height: 40px;
+	width:600px;
+	background-color: transparent;
+	border:0;
+	border-radius: 5px;
+	color:#FFF;
+	font-size: 28px;
+	font-family: '微软雅黑';
+	margin-top: 40px;
+	outline: none;
+}
+.question-item{
+	color:#333;
+	border-bottom: 1px dashed #E7E7E7;
+	padding: 15px 0;
+}
+.question-item strong{
+	font-size: 14px;
+	line-height: 35px;
+}
+.question-item .txt{
+	line-height: 22px;
+}
+
+
+.book-item{
+	color:#333;
+	border-bottom: 1px dashed #E7E7E7;
+	padding: 25px 0;
+}
+.item-book{
+	width:330px;
+}
+.item-book dl{
+    margin:5px 0 15px 100px;
+}
+.item-book .lf{margin-right:105px;}
+.item-book dt{
+    font-size:14px;
+    color: #57AE67;
+}
+.item-book dt a{
+    color:#57AE69;
+}
+.item-book dd{
+    margin: 10px 0;
+}
+.item-question{
+	margin-left: 330px;
+	width:300px;
+	overflow:hidden;
+	margin-top: -5px;
+}
+.item-question a{
+	width:300px;
+	display: block;
+	line-height: 26px;
+	font-weight: bold;
+	color:#333;
+	-o-text-overflow: ellipsis;/*兼容opera*/
+	text-overflow: ellipsis;/*这就是省略号喽*/		  
+	overflow: hidden;/*设置超过的隐藏*/
+	white-space: nowrap;/*设置不折行*/
+}
+
+.user-item{
+	color:#333;
+	border-bottom: 1px dashed #E7E7E7;
+	padding: 25px 0;
+}
+.item-user{
+	width:330px;
+}
+
+.item-user img{
+	width:90px;
+	height:90px;
+	border-radius: 100px;
+	float:left;
+}
+.item-user dl{
+	margin-left: 110px;
+	margin-top: 10px;
+}
+.item-user dt a{
+	line-height: 30px;
+	color:#58AD69 !important;
+}
+.item-user dd{
+	line-height: 22px;
+	color:#333;
+}
+.item-user dd span{
+	color:#8F8F8F;
+	margin-right: 20px;
+}
+.item-answer dt{
+	line-height: 30px;
+	color:#8E8E8E;
+}
+.item-answer dd{
+	line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+

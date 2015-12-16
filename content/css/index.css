@@ -1,0 +1,338 @@
+/* 读 */
+.head-read{
+    background-image:url("../images/read-bg.jpg");
+    /*font-family:'新宋体'*/
+}
+.head-read h1{
+    color: #FFF;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 100px;
+}
+.head-read p{
+    text-align: center;
+    color: #8F8F8F;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.head-read p{
+    text-align: center;
+    color: #8F8F8F;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.recommend-list{
+    margin-top:15px;
+}
+.recommend-list li{
+    float:left;
+    line-height: 35px;
+    margin-left:5px;
+}
+.recommend-list img{
+    width:35px;
+    height:35px;
+    border-radius: 50px;
+}
+.book-list{
+    display: inline-block;
+    width:310px;
+    margin-left:20px;
+}
+.book-list li{
+    float:left;
+    margin-right: 10px;
+}
+.book-list a{
+    display: block;
+    text-align: center;
+    color:#05925E;
+    line-height: 30px;
+}
+
+.review-box{
+    margin-top:20px;
+    border-bottom: 1px dashed #E5E5E5;
+    padding-bottom: 20px;
+}
+.review-box:last-child{border-bottom: none;}
+.review-box .left-num{
+    width:40px;
+}
+.review-box .right-con{
+    max-width:440px;
+    margin-left:15px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+.review-info{
+    width:500px;
+    margin-left:130px;
+}
+.review-info a{
+    font-size: 14px;
+    color:#333;
+}
+.review-info span{
+    color:#909090;
+}
+.review-info p{
+    height:30px;
+    line-height: 30px;
+}
+.answer-box{
+    margin-top:20px;
+    line-height: 20px;
+    border-bottom: 1px dashed #E4E4E4;
+    padding-bottom: 20px;
+}
+.answer-box:last-child{border-bottom: none;}
+.answer-info{
+    width:368px;
+    overflow: hidden;
+}
+.answer-info .left-num{
+    margin:0 15px;
+}
+.answer-info .right-con{
+    width:295px;
+}
+.answer-info h3{
+    margin: 5px 0;
+}
+.item-box h2 a,.answer-info h3 a,.review-info h3 a{
+    color:#1D1D1D;
+}
+
+
+.question-box{
+    /*border-bottom: 1px dashed #E6E6E6;*/
+    padding:15px 0;
+}
+.q-info{
+    margin-left:15px;
+    width:250px;
+}
+.q-info dt a{
+    font-size:14px;
+    color: #0C0C0C;
+    line-height: 26px;
+}
+.q-info dd{
+    margin-bottom:9px;
+    line-height:20px;
+    color:#686868;
+}
+.q-info div{line-height: 25px;}
+.q-info div a{margin-right: 5px;}
+.q-info .more a{
+    color:#8E8E8E;
+    display: inline-block;
+    margin-right: 15px;
+}
+.q-info .more a:hover{
+    color:#0C0C0C;
+}
+
+
+
+
+
+/**************************************************选书师*****************************************************/
+.pick-teacher-bg{
+    background-image:url("../images/pick-teacher-bg.jpg");
+}
+.pick-t-box{
+    width:960px;
+    height:100%;
+    margin:0 auto;
+    position: relative;
+}
+.pick-title{
+    display: block;
+    width:500px;
+    height:100px;
+    margin-left:50px;
+    padding-top:130px;
+}
+.pick-title b{
+    font-size: 35px;
+    line-height: 60px;
+    color:#FFF;
+    font-weight: normal;
+    text-shadow:2px 2px 3px #000;
+}
+.pick-title span{
+    display: inline-block;
+    line-height: 24px;
+}
+.pick-title .span-l{
+    width:105px;
+}
+.pick-title .span-r{
+    color:#FFF;
+}
+.first-user{
+    width:120px;
+    height:200px;
+    position: absolute;
+    top:40px;
+    right:140px;
+}
+.first-user img{
+    width:120px;
+    height:120px;
+    border-radius:100px;
+}
+.first-user .head-tag{
+    margin:10px auto;
+    margin-left:20px;
+}
+.first-user p{
+    color:#FFF;
+    text-align: center;
+    margin:0;
+    line-height: 30px;
+}
+
+.pick-nav{
+    margin:20px 0;
+}
+
+.pick-nav strong{
+    height:28px;
+    line-height: 28px;
+    display: inline-block;
+} 
+.pick-nav li{
+    height:28px;
+    padding: 0 15px;
+    line-height: 28px;
+    text-align:center;
+    float:left;
+    cursor:pointer;
+    font-size: 14px;
+    border: 1px solid #FFF;
+}
+.pick-nav li.current{
+      border: 1px solid #57AC68;
+      color: #55AF69;
+      border-radius: 20px;
+}
+.pick-list{
+    margin-left:1px;
+}
+.pick-list li{
+    width:33%;
+    float:left; 
+    line-height: 20px;
+    text-align: center;
+    /*margin-top: 30px;*/
+    border:1px solid #E6E6E6;
+    margin-left:-1px;
+    margin-top: -1px;
+    padding-top:30px;
+    height:200px;
+}
+.pick-list li.current{
+    box-shadow: 0px 1px 5px #DDD;
+}
+.pick-list li:nth-child(2n){
+    /*margin-left: 100px;*/
+}
+.pick-list .user-head{
+    width:60px;
+    height:60px;
+    display: inline-block;
+}
+.pick-list dd{
+    margin-bottom:6px;
+}
+.pick-list dt{
+    height:24px;
+}
+.pick-list dt a{
+    color:#51B464;
+}
+.pick-book-teacher{
+    display: inline-block;
+    width:17px;
+    height:17px;
+    line-height:17px;
+    color:#FFF;
+    background-color:#FA6465;
+    text-align: center;
+    margin:0 3px;
+}
+.pick-list .invite{
+    display: none;
+    width:50px;
+    height:24px;
+    line-height:24px;
+    color:#FFF;
+    background-color:#51B464;
+    text-align: center;
+    margin:0 3px;
+    border-radius:15px;
+}
+.pick-list .invite.current{
+    background-color: #AAD8B3;
+}
+
+.pick-list .invite:hover{
+    text-decoration: none;
+}
+
+
+.like-book{
+    border-bottom: 1px dashed #ebebeb;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.like-book img{
+    width:60px;
+    height:80px;
+}
+.like-book dl{
+    margin-left:80px;
+    line-height: 20px;
+}
+.like-book:last-child{border:none;}
+
+
+.book-item{
+    float:left;
+    width:50%;
+    line-height: 22px;
+    margin-top: 40px;
+}
+
+.book-item .book-item-info dl{
+    width:170px;
+    height:120px;
+    padding-left:105px;
+}
+.book-item .book-item-info .lh{
+    line-height: 26px;
+}
+.book-item .book-item-question{
+    width:270px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

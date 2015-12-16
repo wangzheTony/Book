@@ -1,0 +1,386 @@
+.tag-mini-list {
+    margin-top:20px;
+}
+
+.tag-mini-list .add{
+    display: inline-block;
+    height:20px;
+    line-height: 20px;
+    cursor:pointer;
+    color:#909090;
+}
+
+.top-bar{
+	box-shadow: none;
+	/*
+	border-bottom:1px solid #DDD;*/
+}
+.btns-box{
+	float: right;
+	margin-right:20px;
+}
+.btns-box a{
+	/*padding:0px 3px;*/
+	width:30px;
+	font-size:14px;
+	margin-top:16px;
+}
+.btns-box .btn-cancel{
+	background-color: #E3E3E3;
+	border:none;
+	color:#FFF;
+	padding: 0 5px;
+}
+.btns-box .btn-cancel:hover{
+	background-color: #646464;
+}
+.btns-box .btn-publish{
+	background-color: #B4E7BE;
+	border:none;
+	color:#FFF;
+}
+.btns-box .btn-publish:hover{
+	background-color: #52B464;
+}
+.top-bar-content span{
+	line-height: 60px;
+	display: block;
+	color:#909090;
+	padding-left:50px;
+}
+.add-book-name{
+	margin-right: 100px;
+	line-height: 60px;
+	color: red;
+
+}
+
+.top-bar-content .select-box{
+	margin-top: 20px;
+	margin-right: 40px;
+}
+.select-box{
+	position: relative;
+	color:#909090;
+
+}
+.select-box .arrow-down{
+	position: absolute;;
+	right:-14px;
+	top:9px;
+	width:10px;
+	height:5px;
+	cursor:pointer;
+	background-image: url("../images/icons.png");
+	background-position:-1px -23px;
+	background-size: 83px 54px;
+}
+.select-box .arrow-up{
+	position: absolute;;
+	right:-14px;
+	top:9px;
+	width:10px;
+	height:5px;
+	cursor:pointer;
+	background-image: url("../images/icons.png");
+	background-position:-1px -17px;
+	background-size: 83px 54px;
+}
+
+.quiz-type{
+	display: inline-block;
+	width:40px;
+	line-height: 20px;
+	height: 20px;
+	text-align: center;
+	overflow:hidden;
+	cursor:pointer;
+}
+.quiz-type-list{
+	width:60px;
+	position: absolute;
+	top:22px;
+	left:0px;
+	z-index: 10000;
+}
+.quiz-type-list li{
+	width:50px;
+	line-height: 30px;
+	height: 30px;
+	text-align: center;
+	border:1px solid #57AD68;
+	margin-top:-1px;
+	overflow:hidden;
+	cursor:pointer;
+	background-color: #FFF;
+}
+.quiz-type-list li:hover{
+	background-color: #57AD68;
+	color:#FFF;
+}
+.current li{
+    display: block !important;
+}
+
+#quiz-container{
+	max-width:1920px;
+	min-width:960px;
+	width:100%;
+}
+.quiz-title{
+	height:300px;
+	width:100%;
+	text-align: center;
+	background: url("../images/book-detail-bg.jpg ");
+	background-repeat: no-repeat;
+	background-size:cover;
+
+}
+.quiz-content{
+	margin:0 auto;
+	width:960px;
+	margin-top: 20px;
+	margin-bottom: 200px;
+}
+.quiz-content .area-bottom{
+	height:8px;
+	background-image: url("../images/area-bottom-bg.jpg ");
+	margin-top:10px;
+}
+.quiz-content .quiz-search{
+	width:330px;
+	height:30px;
+	margin:20px auto;
+}
+.quiz-content .quiz-search input{
+	width:180px;
+	height:24px;
+	line-height: 24px;
+	border:none;
+	background-color:#F7F7F7;
+	text-indent: 5px;
+	margin-right: 40px;
+}
+.quiz-content .page{
+	display: inline-block;
+	cursor:pointer;
+	width:40px;
+	height:24px;
+	line-height: 24px;
+	text-align: center;
+	color:#969696;
+}
+.quiz-content .page:hover{
+	color:#51B464;
+}
+.pick-list li{
+	width:260px;
+	height:70px;
+	float:left;
+	line-height: 20px;
+	margin-right: 60px;
+}
+.pick-list .user-head{
+	width:60px;
+	height:60px;
+}
+.pick-list dl{
+	margin-left:70px;
+}
+.pick-list dt{
+	height:24px;
+}
+.pick-list dt a{
+	color:#51B464;
+}
+.pick-book-teacher{
+	display: inline-block;
+	width:17px;
+	height:17px;
+	line-height:17px;
+	color:#FFF;
+	background-color:#FA6465;
+	text-align: center;
+	margin:0 3px;
+}
+.pick-list .invite{
+	display: inline-block;
+	width:50px; 
+	height:24px;
+	line-height:24px;
+	color:#FFF;
+	background-color:#51B464;
+	text-align: center;
+	margin:0 3px;
+    border-radius:15px;
+}
+.pick-list .invite:hover{
+	text-decoration: none;
+}
+.pick-list .invite.current{
+	background-color:#A9D9B3;
+}
+
+.t-content{
+	margin:0 auto;
+	width:960px;
+	height:300px;
+	position:relative;
+	margin-bottom: 15px;
+}
+.t-content p{
+	text-align: center;
+	margin-top: 10px;
+}
+/*.quiz-content{
+	margin-bottom: 100px;
+	margin-top: 20px;
+}*/
+#text-title{
+	width:100%;
+	height:60px;
+	position: absolute;
+	bottom:0;
+	left:0px;
+	border: 0px solid #DDD;
+	text-indent: 10px;
+	font-size: 30px;
+	background:rgba(255, 255, 255, 0) none repeat scroll 0 0 !important;/*实现FF背景透明，文字不透明*/
+	color:#FFF;
+}
+#text-large{
+	width:950px;
+	height:200px;
+	padding:5px;
+	border: 0px solid #DDD;
+	font-size: 14px;
+	text-indent: 5px;
+	outline: none;
+}
+#text-large[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #555; 
+}
+.file {
+	width:77px;
+	height: 67px;
+	margin: 155px auto 0 auto;
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    color: #1E88C7;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    background: url("../images/add-img-icon.png");
+    cursor: pointer;
+}
+
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    width:77px;
+	height: 67px;
+}
+.file:hover {
+    text-decoration: none;
+}
+.tip-img{
+	width:195px;
+	height:50px;
+	line-height:25px;
+	background-color: #000;
+	padding:5px 10px;
+	color:#FFF;
+	position:absolute;
+	left:550px;
+	top:147px;
+	text-align:left;
+}
+.tip-img em{
+	display: block;
+	position: absolute; 
+	left:-9px;
+	top:20px;
+	width:0; 
+    height:0; 
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent; 
+    border-right:10px solid #000; 
+}
+.add-tag{
+	display: inline-block;
+	height:20px;
+	line-height: 20px;
+	margin-top: 20px;
+	margin-left:10px;
+	color:#909090;
+}
+.add-tag-box{
+	display: inline-block;
+	height:24px;
+	margin-top:19px;
+	margin-left: 15px;
+}
+.add-tag-box .txt-tag{
+	height:22px;
+	width:100px;
+	font-size: 10px;
+	border:1px solid #EBEBEB;
+	background-color: #F8F8F8;
+	text-indent:5px;
+	color:gray;
+}
+.add-tag-box .btn-add-tag{
+	height:24px;
+	line-height: 24px;
+	width:24px;
+	background-color: #EBEBEB;
+	border:none;
+	margin-left:5px;
+	cursor:pointer;
+	font-size: 22px;
+	color:#969696;
+	font-family: '宋体';
+}
+.add-tag-box a{
+	display: inline-block;
+	height:24px;
+	width:40px;
+	text-align: center;
+	line-height: 24px;
+	color:#909090;
+}
+
+
+.txt-box{
+	position: relative;
+	
+}
+
+.book-names{
+	position: absolute;
+	top:0;
+	left:0;
+	width:200px;
+	background-color: #fff;
+	border:1px solid #ddd;
+}
+
+.book-names input[type='text']{
+	width:100%;
+	height:30px;
+	border:1px solid #eee;
+	line-height: 30px; 
+}
+
+.book-names  ul li{
+	width:100%;
+	height: 30px;
+	line-height: 30px;
+}

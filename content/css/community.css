@@ -1,0 +1,369 @@
+/* ==========================================================================
+   书社
+ ========================================================================== */
+
+.community-t-box{
+    text-align: center;
+}
+
+.community-t-box p{
+    margin-top: 15px;
+}
+.community-t-box .head-tag{
+    margin-top: 20px;
+}
+
+
+.community-list li{
+    float:left;
+    position: relative;
+
+    width:300px;
+    height:120px;
+    border:1px solid #f1f1f1;
+
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.community-list li:nth-child(2n){
+    margin-left:25px;
+}
+
+.community-list .community-icon img{
+    width:120px;
+    height:120px;
+}
+
+.community-list li dl{
+    margin-left:134px;
+        padding-right: 5px;
+    line-height: 22px;
+}
+.community-list dl dt{
+    margin-top: 5px;
+}
+.community-list dl dt a{
+    font-size: 16px;
+    color:#000;
+}
+.community-list li dl .dd-l{
+}
+
+.community-list .btn-join{
+    display: none;
+    position: absolute;
+    top:48px;
+    left:34px;
+
+    height: 30px !important;
+    padding: 0 15px;
+    line-height: 30px !important;
+    text-align: center;
+    border-radius: 30px;
+    border:1px solid #ccc;
+    color: #999;
+    cursor: pointer;
+    background-color: #fff;
+}
+.btn-join:hover{
+    color:#fff;
+    background-color: #58AD68;
+    border-color: #58AD68;
+    text-decoration: none;
+
+}
+
+.activity-list li{
+    padding:30px 0;
+    border-bottom:1px solid #EDEDED;
+
+}
+.activity-list li img{
+    float:left;
+    width:120px;
+    height:180px;
+}
+.activity-list li dl{
+    margin-left: 150px;
+    line-height: 24px;
+    margin-top: -6px;
+}
+.activity-list li dt{
+    font-size: 15px;
+    line-height: 30px;
+    
+}
+.activity-list li dt a{
+    color:#000; 
+}
+.activity-list li dd{
+    color:#676767;
+}
+.activity-list li dd.btns{
+    line-height: 30px;
+    margin-top: 6px;
+}
+.activity-list li dd.btns span{
+    margin-left: 20px;
+}
+
+/* ==========================================================================
+   书社详情
+ ========================================================================== */
+.head-community-detail{
+    background-image: url("../images/farming-bg.jpg");
+}
+
+.head-community-detail .head-content{
+    position: relative;
+    text-align: left;
+    width: 960px;
+    margin:0 auto;
+    margin-top: 70px;
+    line-height: 24px;
+    color:white;
+}
+
+.head-community-detail .head-content img{
+    float: left;
+    width:142px;
+    height:142px;
+    border:3px solid #fff;
+}
+
+.head-community-detail .head-content p{
+    padding-left:170px;
+    width:480px;
+}
+
+.head-community-detail .head-content h1{
+    padding-left:170px;
+    line-height: 50px;
+}
+
+.head-community-detail .join{
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left:170px;
+}
+
+.head-community-detail .join span{
+    margin-left: 10px;
+}
+
+.head-community-detail .join a{
+    padding:0 10px;
+}
+
+.community-number-info div{
+    height:50px;
+}
+
+.community-number-info span{
+    line-height: 35px;
+    margin-left:10px;
+}
+
+.community-number-info a{
+    margin-left: 10px;
+}
+
+.community-support{
+    position: relative;
+    background-color: #f6f6f6;
+    padding:15px 20px;
+    margin-top:20px;
+}
+.community-support .zan{
+    display: inline-block;
+    position: absolute;
+    left:30px;
+    top:50px;
+    width:35px;
+    height:35px;
+    line-height: 35px;
+    text-align:center;
+    font-size: 18px;
+    color:#fff;
+    background-color: #a9d8b2;
+}
+
+.community-support .q-info{
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.community-item-nav{
+    width:200px;
+    margin-bottom: -53px;
+}
+
+.community-pick-nav{
+
+}
+
+.post-activity{
+    margin-bottom: 20px;
+}
+
+.post-activity .btn-red{
+    width:75px;
+}
+
+.post-activity .btn-red:first-child{
+    margin-right: 30px;
+}
+
+
+/* ==========================================================================
+   活动详情
+ ========================================================================== */
+.head-activity-detail{
+    background-image: url("../images/farming-bg.jpg");
+}
+
+.head-activity-detail .head-content{
+    position: relative;
+    text-align: left;
+    width: 960px;
+    margin:0 auto;
+    margin-top: 30px;
+    line-height: 24px;
+    color:white;
+}
+
+.head-activity-detail img{
+    width:160px;
+    height:240px;
+    border:3px solid #fff;
+    
+}
+
+.head-activity-detail dl{
+    margin-left:200px;
+    padding-top: 10px;
+    color:#fff;
+}
+.head-activity-detail dt{
+    font-size: 26px;
+    line-height: 60px;
+}
+.head-activity-detail dd{
+    line-height: 24px;
+}
+.head-activity-detail dd.btns{
+    margin-top: 15px;
+    line-height: 30px;
+}
+.head-activity-detail dd.btns span{
+    margin-left: 20px;
+}
+
+
+
+/* ==========================================================================
+   创建书社
+ ========================================================================== */
+.create-community{
+    position:relative;
+    width:720px;
+    height:420px;
+}
+
+.dialog-close{
+    position: absolute;
+    right:15px;
+    top:15px;
+    display: block;
+    width:24px;
+    height:24px; 
+    background: url("../images/dialog-close.png");
+    cursor:pointer;
+}
+
+.create-community .dialog-content{
+    margin:45px;
+}
+
+.create-community .up-img{
+    position:relative;
+    width:200px;
+    height:200px;
+    text-align: center;
+    background-color: #AADFB5;
+    color:#fff;
+}
+.create-community .up-img p{
+    padding-top: 90px;
+}
+
+.create-community .up-img input[type='file']{
+    position: absolute;
+    top:0;
+    left:0;
+    width:200px;
+    height:200px;
+    opacity:0;
+    cursor:pointer;
+}
+
+.create-community .txt-box{
+    width:370px;
+    margin-left:50px;
+}
+
+.create-community .txt-box .about-box{
+    padding:15px 0;
+}
+
+.create-community .txt-box input[type='text']{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    font-size: 20px;
+    border:0px solid #ddd;
+
+}
+
+.create-community .tag-mini-box{
+    margin-top: 20px;
+}
+
+.create-community .txt-box textarea{
+    width:100%;
+    height:100px;
+    margin-top: 10px;
+    border:0px solid #ddd;
+}
+
+.create-community .btn-create{
+    position: absolute;
+    bottom:0;
+    left:0;
+    
+    display: block;
+    width:100%;
+    height:70px;
+    line-height: 70px;
+    font-size: 24px;
+    text-align: center;
+    color:#fff;
+    background-color: #57AC68;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

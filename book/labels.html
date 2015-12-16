@@ -1,0 +1,935 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8">
+    <title>标签</title>
+    <link href="../content/css/base.css" type="text/css" rel="stylesheet">
+    <link href="../content/css/layout.css" type="text/css" rel="stylesheet">
+    <link href="../content/css/books.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <!--顶部导航条-->
+    <div class="top-bar">
+        <a target="_blank" href="index.html"><img class="logo fl" src="../content/images/logo.png"/></a>
+        <div class="top-bar-content">
+            <ul class="top-bar-nav fl">
+                <li><a href="farming.html">书</a></li>
+                <!-- <li><a href="index.html">书</a></li> -->
+                <!-- <li><a href="questions.html">寻</a></li> -->
+                <li><a href="community.html">田</a></li>
+            </ul>
+        </div>
+        <!-- 搜索框 -->
+        <div class="fl search-box">
+            <input type="text" placeholder="搜索书籍/书友/书社/提问..."/>
+            <span></span>
+        </div>
+        <ul class="top-bar-news fr">
+            <!-- 未登录 -->
+            <!-- <li>
+                <a class="unlogin" href="login.html">登录</a>
+            </li>
+            <li>
+                <a class="unlogin unregister" href="register.html">注册</a>
+            </li>  -->     
+            <!-- 已登录 -->  
+            <li id="top-bar-user">
+                    <a  href="my-home.html" target="_blank" ><img class="user-head" src="../content/images/test/head-0.png"/></a>
+                    <div class="user-setup" style="display:none;">
+                        <a href="my-setup.html" target="_blank">设置</a>
+                        <a href="javascript:;">退出</a>
+                    </div>
+            </li>
+            <li id="top-bar-message">
+            <span class="message_div"></span><a class="info msg" href="javascript:;" >12</a></li>
+            <li><a class="answer" href="quiz.html" target="_blank" >提问</a></li>
+        </ul>
+    </div>
+
+    <!--横幅标题-->
+    <div class="head head-label">
+        <div class="head-content">
+            <img class="head-img" src="../content/images/test/label-1.jpg"/>
+            <span class="max-tag">流浪主义</span>
+            <!-- <div class="tags fr">
+                <span class="tag-num"><a href="#">12212</a> 相关书籍</span>
+                <span class="tag-num"><a href="#">12212</a> 相关提问</span>
+            </div> -->
+        </div>
+    </div>
+
+    <div id="container" class="clearfix">
+        <!--主体内容-->
+        <div id="content" class="fl">
+            <ol class="time-sort clearfix">
+                <li id="t-book" class="current"><a href="javascript:;">书籍</a><span>(1233)</span></li>
+                <li id="t-question"><a href="javascript:;">提问</a><span>(1233)</span></li>
+                <li id="t-community"><a href="javascript:;">书社</a><span>(1233)</span></li>
+                <li id="t-friend"><a href="javascript:;">书友</a><span>(1233)</span></li>
+            </ol>
+            <!--书籍-->
+            <div id="book-list" class="info-box clearfix">
+
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!--回答-->
+            <div id="question-list" style="display:none;">
+                <div class="item-title clearfix">
+                    <ul class=" fl">
+                        <li class="current">最新</li>
+                        <li>热门</li>
+                        <li>未答</li>
+                    </ul>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" href="my-home.html" target="_blank"><img  src="../content/images/test/head-0.png"><label>23</label></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" href="my-home.html" target="_blank">一四狗歌</a><span class="fl col-gray">发布问题</span><span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a href="question-detail.html" target="_blank">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+                            <dd class="col-gray">相关书籍：
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《钢铁是怎么练成的》</a> 
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《放风筝的人》</a></dd>
+                            <dd  class="more">
+                            <a href="javascript:;">+ 跟踪问题</a>
+                            <a href="javascript:;">23个回答</a>
+                            <a href="javascript:;">添加回答</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" href="my-home.html" target="_blank"<img  src="../content/images/test/head-0.png"><label>23</label></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" href="my-home.html" target="_blank">一四狗歌</a><span class="fl col-gray">发布问题</span><span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a href="question-detail.html" target="_blank">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+                            <dd>刚好今天我们的主题就是这个，这个问题知乎上已经有过了，我们也采用了其中一个的回答。如何评价「辽宁日报致信全刚好今天我们的主题就是这个，变身智能家居遥控器，开发独立的电话应用，
+                                这些 Facebook F8 开发者大会上刷屏的东西在我们看来一点儿都不新鲜，变身智能家居遥控器这个问题知乎上已经...<span class="unfold">显示全部</span></dd>
+                            <dd class="col-gray">相关书籍：
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《钢铁是怎么练成的》</a> 
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《放风筝的人》</a></dd>
+                            <dd  class="more">
+                            <a href="javascript:;">+ 跟踪问题</a>
+                            <a href="javascript:;">23个回答</a>
+                            <a href="javascript:;">添加回答</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" href="my-home.html" target="_blank"><img  src="../content/images/test/head-0.png"><label>23</label></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" href="my-home.html" target="_blank">一四狗歌</a><span class="fl col-gray">发布问题</span><span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a href="question-detail.html" target="_blank">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+                            <dd>刚好今天我们的主题就是这个，这个问题知乎上已经有过了，我们也采用了其中一个的回答。如何评价「辽宁日报致信全刚好今天我们的主题就是这个，变身智能家居遥控器，开发独立的电话应用，
+                                这些 Facebook F8 开发者大会上刷屏的东西在我们看来一点儿都不新鲜，变身智能家居遥控器这个问题知乎上已经...<span class="unfold">显示全部</span></dd>
+                            <dd class="col-gray">相关书籍：
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《钢铁是怎么练成的》</a> 
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《放风筝的人》</a></dd>
+                            <dd  class="more">
+                            <a href="javascript:;">+ 跟踪问题</a>
+                            <a href="javascript:;">23个回答</a>
+                            <a href="javascript:;">添加回答</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" href="my-home.html" target="_blank"><img  src="../content/images/test/head-0.png"><label>23</label></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" href="my-home.html" target="_blank">一四狗歌</a><span class="fl col-gray">发布问题</span><span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a href="question-detail.html" target="_blank">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+                            <dd>刚好今天我们的主题就是这个，这个问题知乎上已经有过了，我们也采用了其中一个的回答。如何评价「辽宁日报致信全刚好今天我们的主题就是这个，变身智能家居遥控器，开发独立的电话应用，
+                                这些 Facebook F8 开发者大会上刷屏的东西在我们看来一点儿都不新鲜，变身智能家居遥控器这个问题知乎上已经...<span class="unfold">显示全部</span></dd>
+                            <dd class="col-gray">相关书籍：
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《钢铁是怎么练成的》</a> 
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《放风筝的人》</a></dd>
+                            <dd  class="more">
+                            <a href="javascript:;">+ 跟踪问题</a>
+                            <a href="javascript:;">23个回答</a>
+                            <a href="javascript:;">添加回答</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" href="my-home.html" target="_blank"><img  src="../content/images/test/head-0.png"><label>23</label></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" href="my-home.html" target="_blank">一四狗歌</a><span class="fl col-gray">发布问题</span><span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a href="question-detail.html" target="_blank">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+                            <dd>刚好今天我们的主题就是这个，这个问题知乎上已经有过了，我们也采用了其中一个的回答。如何评价「辽宁日报致信全刚好今天我们的主题就是这个，变身智能家居遥控器，开发独立的电话应用，
+                                这些 Facebook F8 开发者大会上刷屏的东西在我们看来一点儿都不新鲜，变身智能家居遥控器这个问题知乎上已经...<span class="unfold">显示全部</span></dd>
+                           <dd class="col-gray">相关书籍：
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《钢铁是怎么练成的》</a> 
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《放风筝的人》</a></dd>
+                            <dd  class="more">
+                            <a href="javascript:;">+ 跟踪问题</a>
+                            <a href="javascript:;">23个回答</a>
+                            <a href="javascript:;">添加回答</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a href="my-home.html" target="_blank"><img class="user-head fl" src="../content/images/test/head-0.png"></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" href="my-home.html" target="_blank">一四狗歌</a><span class="fl col-gray">发布问题</span><span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a href="question-detail.html" target="_blank">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+                            <dd class="col-gray">相关书籍：
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《钢铁是怎么练成的》</a> 
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《放风筝的人》</a></dd>
+                            <dd  class="more">
+                            <a href="javascript:;">+ 跟踪问题</a>
+                            <a href="javascript:;">23个回答</a>
+                            <a href="javascript:;">添加回答</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" href="my-home.html" target="_blank"><img  src="../content/images/test/head-0.png"><label>23</label></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" href="my-home.html" target="_blank">一四狗歌</a><span class="fl col-gray">发布问题</span><span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a href="question-detail.html" target="_blank">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+                            <dd class="col-gray">相关书籍：
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《钢铁是怎么练成的》</a> 
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《放风筝的人》</a></dd>
+                            <dd  class="more">
+                            <a href="javascript:;">+ 跟踪问题</a>
+                            <a href="javascript:;">23个回答</a>
+                            <a href="javascript:;">添加回答</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="question-box" style="display: none">
+                    <a href="my-home.html" target="_blank"><img class="user-head fl" src="../content/images/test/head-0.png"></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" href="#">一四狗歌</a><span class="fl col-gray">发布问题</span><span class="fr col-gray">34分钟</span>
+                        </div>
+                        <dl>
+                            <dt><a href="book-detail.html" target="_blank">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+                            <dd class="col-gray">相关书籍：
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《钢铁是怎么练成的》</a> 
+                            <a class="col-green-1" href="book-detail.html" target="_blank">《放风筝的人》</a></dd>
+                            <dd  class="more">
+                            <a href="javascript:;">+ 跟踪问题</a>
+                            <a href="javascript:;">23个回答</a>
+                            <a href="javascript:;">添加回答</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 书社 -->
+            <div id="book-community"  style="display:none;">
+               
+                <div class="question-box book-community-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/shushe.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-black fw-bold f16" target="_blank" href="community-detail.html">十万个为什么学社</a></dt>
+                        <dd class="col-gray">新国学，代表着建立在以儒学为基础的当独立、自助的生活不能再维持时，我们该怎么办？</dd>
+                        <dd class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">这个人  </a>社长 </dd>
+                        <dd class="col-gray">3078社员，3232书籍</dd>
+                    </dl>
+                    <div class="book-community-opt fr">
+                        <a class="btn-green" href="javascript:;">加入</a>
+                    </div>
+                </div>
+                <div class="question-box book-community-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/shushe.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-black fw-bold f16" target="_blank" href="community-detail.html">十万个为什么学社</a></dt>
+                        <dd class="col-gray">新国学，代表着建立在以儒学为基础的当独立、自助的生活不能再维持时，我们该怎么办？</dd>
+                        <dd class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">这个人  </a>社长 </dd>
+                        <dd class="col-gray">3078社员，3232书籍</dd>
+                    </dl>
+                    <div class="book-community-opt fr">
+                        <a class="btn-green" href="javascript:;">加入</a>
+                    </div>
+                </div>
+                <div class="question-box book-community-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/shushe.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-black fw-bold f16" target="_blank" href="community-detail.html">十万个为什么学社</a></dt>
+                        <dd class="col-gray">新国学，代表着建立在以儒学为基础的当独立、自助的生活不能再维持时，我们该怎么办？</dd>
+                        <dd class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">这个人  </a>社长 </dd>
+                        <dd class="col-gray">3078社员，3232书籍</dd>
+                    </dl>
+                    <div class="book-community-opt fr">
+                        <a class="btn-green" href="javascript:;">加入</a>
+                    </div>
+                </div>
+                <div class="question-box book-community-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/shushe.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-black fw-bold f16" target="_blank" href="community-detail.html">十万个为什么学社</a></dt>
+                        <dd class="col-gray">新国学，代表着建立在以儒学为基础的当独立、自助的生活不能再维持时，我们该怎么办？</dd>
+                        <dd class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">这个人  </a>社长 </dd>
+                        <dd class="col-gray">3078社员，3232书籍</dd>
+                    </dl>
+                    <div class="book-community-opt fr">
+                        <a class="btn-green" href="javascript:;">加入</a>
+                    </div>
+                </div>
+                <div class="question-box book-community-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/shushe.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-black fw-bold f16" target="_blank" href="community-detail.html">十万个为什么学社</a></dt>
+                        <dd class="col-gray">新国学，代表着建立在以儒学为基础的当独立、自助的生活不能再维持时，我们该怎么办？</dd>
+                        <dd class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">这个人  </a>社长 </dd>
+                        <dd class="col-gray">3078社员，3232书籍</dd>
+                    </dl>
+                    <div class="book-community-opt fr">
+                        <a class="btn-green" href="javascript:;">加入</a>
+                    </div>
+                </div>
+                <div class="question-box book-community-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/shushe.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-black fw-bold f16" target="_blank" href="community-detail.html">十万个为什么学社</a></dt>
+                        <dd class="col-gray">新国学，代表着建立在以儒学为基础的当独立、自助的生活不能再维持时，我们该怎么办？</dd>
+                        <dd class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">这个人  </a>社长 </dd>
+                        <dd class="col-gray">3078社员，3232书籍</dd>
+                    </dl>
+                    <div class="book-community-opt fr">
+                        <a class="btn-green" href="javascript:;">加入</a>
+                    </div>
+                </div> 
+                <div class="question-box book-community-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/shushe.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-black fw-bold f16" target="_blank" href="community-detail.html">十万个为什么学社</a></dt>
+                        <dd class="col-gray">新国学，代表着建立在以儒学为基础的当独立、自助的生活不能再维持时，我们该怎么办？</dd>
+                        <dd class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">这个人  </a>社长 </dd>
+                        <dd class="col-gray">3078社员，3232书籍</dd>
+                    </dl>
+                    <div class="book-community-opt fr">
+                        <a class="btn-green" href="javascript:;">加入</a>
+                    </div>
+                </div>
+                <div class="question-box book-community-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/shushe.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-black fw-bold f16" target="_blank" href="community-detail.html">十万个为什么学社</a></dt>
+                        <dd class="col-gray">新国学，代表着建立在以儒学为基础的当独立、自助的生活不能再维持时，我们该怎么办？</dd>
+                        <dd class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">这个人  </a>社长 </dd>
+                        <dd class="col-gray">3078社员，3232书籍</dd>
+                    </dl>
+                    <div class="book-community-opt fr">
+                        <a class="btn-green" href="javascript:;">加入</a>
+                    </div>
+                </div>
+                <div class="question-box book-community-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/shushe.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-black fw-bold f16" target="_blank" href="community-detail.html">十万个为什么学社</a></dt>
+                        <dd class="col-gray">新国学，代表着建立在以儒学为基础的当独立、自助的生活不能再维持时，我们该怎么办？</dd>
+                        <dd class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">这个人  </a>社长 </dd>
+                        <dd class="col-gray">3078社员，3232书籍</dd>
+                    </dl>
+                    <div class="book-community-opt fr">
+                        <a class="btn-green" href="javascript:;">加入</a>
+                    </div>
+                </div>
+                <div class="question-box book-community-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/shushe.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-black fw-bold f16" target="_blank" href="community-detail.html">十万个为什么学社</a></dt>
+                        <dd class="col-gray">新国学，代表着建立在以儒学为基础的当独立、自助的生活不能再维持时，我们该怎么办？</dd>
+                        <dd class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">这个人  </a>社长 </dd>
+                        <dd class="col-gray">3078社员，3232书籍</dd>
+                    </dl>
+                    <div class="book-community-opt fr">
+                        <a class="btn-green" href="javascript:;">加入</a>
+                    </div>
+                </div>       
+
+            </div>
+
+            <!-- 书友 -->
+            <div id="book-friend" style="display:none;">
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="q-info friend-item">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <span class="fr col-gray">2015-10-12标记</span>
+                        </div>
+                        <p>广州，产品经理，张伟公众号....</p>
+                        <a class="btn-green fr" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="q-info friend-item">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <span class="fr col-gray">2015-10-12标记</span>
+                        </div>
+                        <p>广州，产品经理，张伟公众号....</p>
+                        <a class="btn-green fr" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="q-info friend-item">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <span class="fr col-gray">2015-10-12标记</span>
+                        </div>
+                        <p>广州，产品经理，张伟公众号....</p>
+                        <a class="btn-green fr" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="q-info friend-item">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <span class="fr col-gray">2015-10-12标记</span>
+                        </div>
+                        <p>广州，产品经理，张伟公众号....</p>
+                        <a class="btn-green fr" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="q-info friend-item">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <span class="fr col-gray">2015-10-12标记</span>
+                        </div>
+                        <p>广州，产品经理，张伟公众号....</p>
+                        <a class="btn-green fr" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="q-info friend-item">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <span class="fr col-gray">2015-10-12标记</span>
+                        </div>
+                        <p>广州，产品经理，张伟公众号....</p>
+                        <a class="btn-green fr" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="q-info friend-item">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <span class="fr col-gray">2015-10-12标记</span>
+                        </div>
+                        <p>广州，产品经理，张伟公众号....</p>
+                        <a class="btn-green fr" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="q-info friend-item">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <span class="fr col-gray">2015-10-12标记</span>
+                        </div>
+                        <p>广州，产品经理，张伟公众号....</p>
+                        <a class="btn-green fr" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="q-info friend-item">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <span class="fr col-gray">2015-10-12标记</span>
+                        </div>
+                        <p>广州，产品经理，张伟公众号....</p>
+                        <a class="btn-green fr" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="q-info friend-item">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <span class="fr col-gray">2015-10-12标记</span>
+                        </div>
+                        <p>广州，产品经理，张伟公众号....</p>
+                        <a class="btn-green fr" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="q-info friend-item">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <span class="fr col-gray">2015-10-12标记</span>
+                        </div>
+                        <p>广州，产品经理，张伟公众号....</p>
+                        <a class="btn-green fr" href="javascript:;">关注</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--右侧其它内容-->
+        <div id="other" class="fr">
+            <div class="other-item">
+                <strong class="f14">活跃于该标签的书友</strong>
+                <div class="men-info">
+                    <a class="fl" href="my-home.html" target="_blank"><img class="user-head" src="../content/images/test/head-0.png"/> </a>
+                    <div class="men-right">
+                        <a class="col-green-1" href="my-home.html" target="_blank">吃苹果的这个人</a>
+                        <p>张家湾个人公众号：张家湾写字的地方</p>
+                        <p class="col-gray">为寻书好友获得123个赞</p>
+                        <a class="btn-green" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="men-info">
+                    <a class="fl" href="my-home.html" target="_blank"><img class="user-head" src="../content/images/test/head-0.png"/> </a>
+                    <div class="men-right">
+                        <a class="col-green-1" href="my-home.html" target="_blank">吃苹果的这个人</a>
+                        <p>张家湾个人公众号：张家湾写字的地方</p>
+                        <p class="col-gray">为寻书好友获得123个赞</p>
+                        <a class="btn-green" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="men-info">
+                    <a class="fl" href="my-home.html" target="_blank"><img class="user-head" src="../content/images/test/head-0.png"/> </a>
+                    <div class="men-right">
+                        <a class="col-green-1" href="my-home.html" target="_blank">吃苹果的这个人</a>
+                        <p>张家湾个人公众号：张家湾写字的地方</p>
+                        <p class="col-gray">为寻书好友获得123个赞</p>
+                        <a class="btn-green" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="men-info">
+                    <a class="fl" href="my-home.html" target="_blank"><img class="user-head" src="../content/images/test/head-0.png"/> </a>
+                    <div class="men-right">
+                        <a class="col-green-1" href="my-home.html" target="_blank">吃苹果的这个人</a>
+                        <p>张家湾个人公众号：张家湾写字的地方</p>
+                        <p class="col-gray">为寻书好友获得123个赞</p>
+                        <a class="btn-green" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="men-info no-border">
+                    <a class="fl" href="my-home.html" target="_blank"><img class="user-head" src="../content/images/test/head-0.png"/> </a>
+                    <div class="men-right">
+                        <a class="col-green-1" href="my-home.html" target="_blank">吃苹果的这个人</a>
+                        <p>张家湾个人公众号：张家湾写字的地方</p>
+                        <p class="col-gray">为寻书好友获得123个赞</p>
+                        <a class="btn-green" href="javascript:;">关注</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two-code col-gray">
+                <p>书友交流群：216560849</p>
+                <p>新浪微博：@书田2015</p>
+                <img src="../content/images/twe-code.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <!--底部-->
+    <div class="footer">
+        <ul>
+            <li><a href="#">书田行动</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">建议反馈</a></li>
+            <li><span>广州书田网络科技有限公司   鄂ICP备14013349号-2</span></li>
+        </ul>
+    </div>
+
+    <!-- 消息 -->
+    <div id="message" style="display:none;">
+        
+        <ul class="msg-nav" style="display:;">
+                <li id="li-answer">
+                    <em>话</em>
+                    <i>12</i>
+                    <div class="col-gray-deep">回答/评论/回复</div>
+                    <div class="col-gray-shoal">会飞的鱼评论了你在提问下</div>
+                </li>
+                <li id="li-approve">
+                    <em>赞</em>
+                    <i>12</i>
+                    <div>赞同</div>
+                    <div>会飞的鱼评论了你在提问下</div>
+                </li>
+                <li id="li-invite">
+                    <em>邀</em>
+                    <i>12</i>
+                    <div>邀请</div>
+                    <div>会飞的鱼评论了你在提问下</div>
+                </li>
+                <li id="li-attention">
+                    <em>关</em>
+                    <i>12</i>
+                    <div>关注</div>
+                    <div>会飞的鱼评论了你在提问下</div>
+                </li>
+                <li id="li-seed">
+                    <em>种</em>
+                    <div>种子</div>
+                    <div>会飞的鱼评论了你在提问下</div>
+                </li>
+        </ul>
+        
+        
+        <div class="message-list" style="display:none;">
+            <div class="msg-top">
+                <span class="btn-green" id="btn-return">返回</span>
+            </div>
+            <ul class="answer-list">
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+               <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+               <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+            </ul>
+            <ul class="appro-list" style="display: none;">
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人赞同你的回答
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人赞同你的回答
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+               <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人赞同你的回答
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+            </ul>
+            <ul class="review-list" style="display: none;">
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人评论了你的问题
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人评论了你的问题
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+               <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人评论了你的问题
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+            </ul>
+            <dl class="attention-list" style="display: none;">
+                <dt>最近这些人关注了你</dt>
+                <dd>
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="info">
+                        <a class="" target="_blank" href="my-home.html">湿嗒嗒</a>
+                        <p>一句话的自我简介.111.......</p>
+                    </div>
+                </dd>
+                <dd>
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="info">
+                        <a class="" target="_blank" href="my-home.html">湿嗒嗒</a>
+                        <p>一句话的自我简介........</p>
+                    </div>
+                </dd>
+                <dd>
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="info">
+                        <a class="" target="_blank" href="my-home.html">湿嗒嗒</a>
+                        <p>一句话的自我简介........</p>
+                    </div>
+                </dd>
+                <dd>
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="info">
+                        <a class="" target="_blank" href="my-home.html">湿嗒嗒</a>
+                        <p>一句话的自我简介........</p>
+                    </div>
+                </dd>
+            </dl>
+            <ul class="seed-list">
+                <li class="row1">
+                    <p>恭喜你，连续登录3天获得3个种子。</p>
+                    <p>2015-1-1</p>
+                </li>
+                <li>
+                    获得<span class="col-green-1">212</span>个种子:<a href="my-home.html" target="_blank">小白</a>等123人认为你在提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>
+                    下的回答非常有种。
+                </li>
+                <li>
+                    获得<span class="col-green-1">212</span>个种子:<a href="my-home.html" target="_blank">小白</a>等123人认为你在提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>
+                    下的回答非常有种。
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="../content/js/jquery-1.11.2.min.js"></script>
+    <script src="../content/plugins/jquery.goup.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../content/js/common.js"></script>
+    <script>
+        $(function(){
+            $(".time-sort li").click(function() {
+                $(this).parents("ol").find(".current").removeClass('current');
+                $(this).addClass("current");
+            });
+
+            $("#t-book").click(function(){
+                $("#content").children("div").hide();
+                $("#book-list").show();
+            });
+
+            $("#t-question").click(function(){
+                $("#content").children("div").hide();
+                $("#question-list").show();
+            });
+
+            $("#t-community").click(function(){
+                $("#content").children("div").hide();
+                $("#book-community").show();
+            });
+
+            $("#t-friend").click(function(){
+                $("#content").children("div").hide();
+                $("#book-friend").show();
+            });
+        })
+    </script>
+</body>
+
+</html>

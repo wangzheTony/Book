@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8">
+    <title>提问</title>
+	
+<link href="../content/css/base.css" type="text/css" rel="stylesheet">
+    <link href="../content/css/layout.css" type="text/css" rel="stylesheet">
+    <link href="../content/css/quiz.css" type="text/css" rel="stylesheet"> 
+     
+    <script type="text/javascript" src="../content/js/jquery-1.11.2.min.js"></script> 
+    <!-- <script type="text/javascript" src="../content/js/common.js"></script> -->
+</head>
+<body>
+	<!--顶部导航条--> 
+    <div class="top-bar">
+        <a href="index.html"><img class="logo fl" src="../content/images/logo.png"/></a>
+        <div class="top-bar-content fl">
+        	<!-- <div class="select-box fl" id="quiz-type" unselectable="on" onselectstart="return false;" style="-moz-user-select:none;">
+        		<em class="arrow-down"></em>
+        		<label class="quiz-type">提问</label>
+	            <ul class="quiz-type-list" style="display: none;">
+	            	<li>提问</li>
+	            	<li>回答</li>
+	            	<li>文章</li>
+	            	<li>活动</li>
+	            </ul>
+        	</div>
+            <div class="select-box fl" id="quiz-style" unselectable="on" onselectstart="return false;" style="-moz-user-select:none;">
+                <em class="arrow-down"></em>
+                <label class="quiz-type col-red">选择</label>
+                <ul class="quiz-type-list" style="display: none;">
+                    <li>寻书</li>
+                    <li>评书</li>
+                    <li>写书</li>
+                    <li>其他</li>
+                </ul>
+            </div> -->
+            <span class="fl">标签：</span>
+            <div class="fl tag-mini-list">
+            	<a class="tag-mini" href="labels.html" target="_blank">哲学</a>
+            	<a class="tag-mini" href="labels.html" target="_blank">学问</a>
+            </div>
+            <a href="javascript:;" class="add-tag">添加+</a>
+            <div class="add-tag-box clearfix" style="display:none;">
+                    <input class="txt-tag fl" type="text" >
+                    <input class="btn-add-tag fl" type="button" value="+">
+                    <a href="javascript:;" class="define">完成</a>
+            </div>
+        </div>
+
+        <div class="btns-box fr">
+            <a class="btn-gray btn-cancel" href="javascript:;" onclick="closeWindow();" >取消</a>
+            <a class="btn-green btn-publish" href="#">发布</a>
+        </div>
+    </div>
+	
+	<!--内容 -->
+    <div id="quiz-container">
+    	<div class="quiz-title">
+    		<div class="t-content">
+    			<a href="javascript:;" class="file" id="up-img">
+                    <input type="file">
+                </a> 
+                <div class="tip-img">添加像素为 <span class="col-green-1">1920*300</span> 的配图，获得瞩目和种子。<em></em></div>
+    			<input id="text-title" type="text" placeholder="输入标题">
+    		</div>
+    	</div>
+    	<div class="quiz-content">
+    		
+            <!-- 编辑器 -->
+            <div class="txt-box">
+                <div id="text-large" contenteditable="true" placeholder="详细描述内容，可根据《》，在书名号中间添加书籍" ></div>
+                <!-- 
+                <div class="book-names j-book-names">
+                    <input type="text">
+                    <ul>
+                        <li>sdfdsf</li>
+                        <li>sdfdsf</li>
+                        <li>dsfsdf</li>
+                        <li>sdfsdf</li>
+                    </ul>
+                </div> -->
+            </div>
+            <!--style给定宽度可以影响编辑器的最终宽度-->
+
+          
+            <!-- 选书师列表 -->
+            <div class="area-bottom"></div>
+            <div class="quiz-search">
+                <label><input type="text" placeholder="你可以要求选书师来解答"><em></em></label>
+                <span class="page">上页</span><span class="page">下页</span>
+            </div>
+            <ul class="pick-list">
+                <li>
+                    <a class="fl" href="myhome.html" target="_blanck">
+                        <img class="user-head" src="../content/images/test/head-2.png">
+                    </a>
+                    <dl>
+                        <dt class="clearfix">
+                            <a class="fl" href="myhome.html" target="_blanck">天下我最大<em class="pick-book-teacher">选</em></a>
+                            <a class="invite current fr" href="javascript:;">已邀请</a>
+                        </dt>
+                        <dd>擅长国学/教育/大学生/家教...</dd>
+                        <dd class="col-gray">获得123个赞</dd>
+                    </dl>
+                </li>
+                <li>
+                    <a class="fl" href="myhome.html" target="_blanck">
+                        <img class="user-head" src="../content/images/test/head-2.png">
+                    </a>
+                    <dl>
+                        <dt class="clearfix">
+                            <a class="fl" href="myhome.html" target="_blanck">天下我最大<em class="pick-book-teacher">选</em></a>
+                            <a class="invite fr" href="javascript:;">邀请</a>
+                        </dt>
+                        <dd>擅长国学/教育/大学生/家教...</dd>
+                        <dd class="col-gray">获得123个赞</dd>
+                    </dl>
+                </li>
+                <li>
+                    <a class="fl" href="myhome.html" target="_blanck">
+                        <img class="user-head" src="../content/images/test/head-2.png">
+                    </a>
+                    <dl>
+                        <dt class="clearfix">
+                            <a class="fl" href="myhome.html" target="_blanck">天下我最大<em class="pick-book-teacher">选</em></a>
+                            <a class="invite fr" href="javascript:;">邀请</a>
+                        </dt>
+                        <dd>擅长国学/教育/大学生/家教...</dd>
+                        <dd class="col-gray">获得123个赞</dd>
+                    </dl>
+                </li>
+            </ul>
+    	</div>
+    </div>
+
+    
+    <script>
+
+    $(function(){
+
+        $("#text-large").keyup(function(e) {
+　　      　  var currKey=e.keyCode||e.which||e.charCode;
+　　      　　var keyName = String.fromCharCode(currKey);
+　　       　// alert("按键码: " + currKey + " 字符: " + keyName);
+                
+              //书名括号
+              if (keyName ==="¼") {
+                 
+              };
+        });
+
+        //下拉框
+    	$("#quiz-type em,#quiz-type label,#quiz-type li").click(function(){
+			$("#quiz-type ul").toggle();
+
+			$("#quiz-type ul li").click(function(){ 
+				$("#quiz-type label").text($(this).text());
+			});
+		});
+        $("#quiz-style em,#quiz-style label,#quiz-style li").click(function(){
+            $("#quiz-style ul").toggle();
+
+            $("#quiz-style ul li").click(function(){ 
+                $("#quiz-style label").text($(this).text());
+            });
+        });
+
+        //添加标签
+        $(".add-tag").click(function(){
+            $(".add-tag-box").show();
+            $(this).hide();
+        });
+        $(".btn-add-tag").click(function(){
+            var txt = $(".txt-tag").val();
+            if($.trim(txt)){
+                var html = '<a class="tag-mini" href="labels.html" target="_blank">'+txt+'</a>';
+                $(".tag-mini-list").append(html);
+                $(".txt-tag").val("");
+            }
+            else{alert("请输入标签(●'◡'●)");}
+        });
+        $(".define").click(function(){
+            $(".add-tag-box").hide();
+            $(".add-tag").show();
+        });
+
+
+    })
+
+    //关闭窗口
+    function closeWindow(){
+        var userAgent = navigator.userAgent;
+        if (userAgent.indexOf("Firefox") != -1 || userAgent.indexOf("Presto") != -1) {
+            window.location.replace("about:blank");
+        } else {
+            window.opener = null;
+            window.open("", "_self");
+            window.close();
+        }
+    }
+
+    function getCursortPosition (ctrl) {//获取光标位置函数
+        var CaretPos = 0;   // IE Support
+        if (document.selection) {
+        ctrl.focus ();
+            var Sel = document.selection.createRange ();
+            Sel.moveStart ('character', -ctrl.value.length);
+            CaretPos = Sel.text.length;
+        }
+        // Firefox support
+        else if (ctrl.selectionStart || ctrl.selectionStart == '0')
+            CaretPos = ctrl.selectionStart;
+        return (CaretPos);
+    }
+
+    </script>
+
+
+</body>

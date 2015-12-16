@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>从读书开始</title>
+	<meta content="text/html" charset="utf-8">
+	<link href="../content/css/base.css" type="text/css" rel="stylesheet">
+	<link href="../content/css/propaganda.css" type="text/css" rel="stylesheet">
+</head>
+	
+<body id="propaganda">
+	<header>
+		<a class="prop-logo" href="farming.html" >
+		<!-- <img src="../content/images/logo-white.png"/> -->
+		进入内测版</a>
+	</header>
+	<section id="content">
+	<div class="content-txt" style="visibility: none;">
+		<!-- <h4>茫茫书海，我何取一瓢饮？</h4> -->
+		<p style="line-height: ">书田是一个只为爱书人的兴趣社交平台。<br>通过问答和专业的选书师，可以找到更多好书、好作者、好书友，享受书籍之美。</p>
+	</div>
+
+		<!-- <div class="clearfix">
+			<div class="title-wrap">
+				<ul class="title-list">
+					<li class="title-4"></li>
+					<li class="title-3"></li>
+					<li class="title-2"></li>
+					<li class="title-1"></li>
+				</ul>
+			</div>
+			<div class="title-bottom">
+				<div class="title-go" style="display: none;"></div>
+				<div class="fl font-detail" style="display:none;">书田帮助书友节约寻找、发现书籍的时间，把更多的时间留给阅读和思考，交流和行动。</div>
+				<a id="next-page" href="javascript:;" style="display:none;">></a>
+			</div>
+		</div> -->
+	</section>
+<!-- 	<footer>
+		<img class="fl" src="../content/images/code_1.jpg"/>
+		<img class="fl" src="../content/images/code_2.jpg"/>
+		<div class="book-intro fl">
+			<p>茫茫书海，我何取一瓢饮？</p>
+			<p>书田已有<span>108</span>位专业选书师为<span>7324</span>名书友推荐<span>18695</span>本优秀书籍</p>
+		</div>
+		<div class="warn-num">
+			书田已经有<span>32</span>位专业选书师为<span>32323</span>名书友推荐<span>2400</span>本书籍
+		</div>
+		<div class="warn-account">
+		
+		</div>
+	</footer> -->
+</body>
+<script type="text/javascript" src="../content/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+		    $("#propaganda").css({'background-image':'url(../content/images/pageindex_bg_2.jpg)'});
+		}else if(/(Android)/i.test(navigator.userAgent)) {
+		    $("#propaganda").css({'background-image':'url(../content/images/pageindex_bg_2.jpg)'});
+		}else{
+		    //window.location.href ="pc.html";
+		};
+	})
+</script>
+<script type="text/javascript">
+	// $(function(){
+	// 	$(".title-1").show().animate({
+	// 		left:'+=854px'
+	// 	},1000);
+
+		
+	// 	setTimeout('$(".title-go").fadeIn(1000)',1000);
+	// 	setTimeout('$(".font-detail").slideDown(1000)',2000);
+	// 	setTimeout('$("#next-page").fadeIn(1000)',3000);
+
+	// 	var i = 0;
+	// 	$("#next-page").click(function(){
+	// 		switch(i){
+	// 			case 0: 
+	// 				$(".title-1").slideUp().animate({left:'-=854px'});
+	// 				hideText();
+
+	// 				$(".title-2").show().animate({
+	// 					left:'+=854px'
+	// 				},1000);
+	// 				replaceText("书田希望书友通过读书以及与人交流，能够开拓视野、发散思维，让思想走在行动之前。 ");
+	// 				showText();
+	// 				i++;
+	// 				break;
+	// 			case 1:
+	// 				$(".title-2").slideUp().animate({left:'-=854px'});
+	// 				hideText();
+	// 				$(".title-3").show().animate({
+	// 					left:'+=854px'
+	// 				},1000);
+	// 				replaceText("书田支持书友通过读书、写书、出书去坚持理想、追求真理，让世界拥有不一样的声音。");
+	// 				showText();
+	// 				i++;
+	// 				break;
+	// 			case 2:
+	// 				$(".title-3").slideUp().animate({left:'-=854px'});
+	// 				hideText();
+	// 				$(".title-4").show().animate({
+	// 					left:'+=854px'
+	// 				},1000);
+	// 				replaceText("书田鼓励书友能在学习、工作、娱乐之余培养阅读交流习惯，感受读书带来的精神乐趣。 ");
+	// 				showText();
+	// 				i++;
+	// 				break;
+	// 			case 3:
+	// 				$(".title-4").slideUp().animate({left:'-=854px'});
+	// 				hideText();
+	// 				$(".title-1").show().animate({
+	// 					left:'+=854px'
+	// 				},1000);
+	// 				replaceText("书田帮助书友节约寻找、发现书籍的时间，把更多的时间留给阅读和思考，交流和行动。");
+	// 				showText();
+	// 				i=0;
+	// 				break;
+	// 		};
+	// 	});
+
+	// 	function showText(){
+	// 		setTimeout('$(".title-go").fadeIn(1000)',1000);
+	// 		setTimeout('$(".font-detail").slideDown(1000)',2000);
+	// 		setTimeout('$("#next-page").fadeIn(1000)',3000);
+	// 	}
+	// 	function hideText(){
+	// 		$(".title-go").fadeOut();
+	// 		$(".font-detail").slideUp(5);
+	// 		$("#next-page").fadeOut("fast");
+	// 	}
+
+	// 	function replaceText(txt){
+	// 		$(".font-detail").text(txt);
+	// 	} 
+	// });
+</script>
+
+</html>

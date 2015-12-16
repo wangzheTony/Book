@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta content="text/html" charset="utf-8">
+    <title>我的主页</title>
+    <link href="../content/css/base.css" type="text/css" rel="stylesheet">
+    <link href="../content/css/layout.css" type="text/css" rel="stylesheet">
+    <link href="../content/css/farming.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../content/js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+    <!--顶部导航条-->
+    <div class="top-bar">
+        <a target="_blank" href="index.html"><img class="logo fl" src="../content/images/logo.png"/></a>
+        <div class="top-bar-content">
+            <ul class="top-bar-nav fl">
+                <li><a href="farming.html">书</a></li>
+                <!-- <li><a href="index.html">书</a></li> -->
+                <!-- <li><a href="questions.html">寻</a></li> -->
+                <li><a href="community.html">田</a></li>
+            </ul>
+        </div>
+        <!-- 搜索框 -->
+        <div class="fl search-box">
+            <input class="" type="text" placeholder="搜索书籍/书友/书社/提问..."/>
+            <span></span>
+        </div>
+        <ul class="top-bar-news fr">
+            <!-- 未登录 -->
+            <li>
+                <a class="unlogin" href="login.html">登录</a>
+            </li>
+            <li>
+                <a class="unlogin unregister" href="register.html">注册</a>
+            </li>      
+            <!-- 已登录 -->  
+            <!-- <li id="top-bar-user">
+                    <a  href="my-home.html" target="_blank" ><img class="user-head" src="../content/images/test/head-0.png"/></a>
+                    <div class="user-setup" style="display:none;">
+                        <a href="my-setup.html" target="_blank">设置</a>
+                        <a href="javascript:;">退出</a>
+                    </div>
+            </li> -->
+            <li id="top-bar-message">
+            <span class="message_div"></span><a class="info msg" href="javascript:;" >12</a></li>
+            <li><a class="answer" href="quiz.html" target="_blank" >提问</a></li>
+        </ul>
+    </div>
+    
+    <!--横幅标题-->
+    <div class="head head-farming">
+        <div class="head-home">
+            <img id="my-head" src="../content/images/test/head-home.jpg">
+            <p><strong class="f20">小丸子</strong> <span>产品经理</span></p>
+            <p>他已经过了六十岁，但劲头十足，他真正生命似乎刚刚开始。</p>
+            <p class="head-home-follow">
+                <span>555 粉丝</span>
+                <!-- <a class="follow" href="javascript:;">关注</a> -->
+                <a class="btn-bg-green-deep" href="my-home-setup.html">设置</a>
+                <span>5558 赞同</span>
+            </p>
+        </div>
+    </div>
+
+    <!--主体内容-->
+    <div id="container" class="clearfix">
+        
+        <div id="content" class="fl">
+            <!-- <ol class="time-sort clearfix">
+                <li class="current"><a href="my-home.html">动态</a></li>
+                <li><a href="#">提问</a></li>
+                <li><a href="#">回答</a></li>
+            </ol> -->
+            <!-- 导航 -->
+            <ul class="item-nav clearfix">
+                <li class="current j-bh-home">主页</li>
+                <li class="j-bh-qaa">问答</li>
+                <li class="j-bh-bookshelf">书架</li>
+            </ul>
+
+            <script type="text/javascript">
+            $(function(){
+              //子导航内容切换
+              $(".j-bh-home").click(function() {
+                  $("#content").children('div').hide();
+                  $(".j-bc-home").show();
+              });
+              $(".j-bh-qaa").click(function() {
+                  $("#content").children('div').hide();
+                  $(".j-bc-qaa").show();
+              });
+              $(".j-bh-bookshelf").click(function() {
+                  $("#content").children('div').hide();
+                  $(".j-bc-bookshelf").show();
+              });
+
+            })
+            </script>
+
+            <!-- 主页 -->
+            <div class="j-bc-home">
+                <div class="question-box community-support">
+                    <b class="f16">最赞的回答</b>
+                    <span class="zan">45</span>
+                    <div class="q-info ">
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+                            <dd>刚好今天我们的主题就是这个，这个问题知乎上已经有过了，我们也采用了其中一个的回答。如何评价「辽宁日报致信全刚好今天我们的主题就是这个，变身智能家居遥控器，开发独立的电话应用，
+                                这些 Facebook F8 开发者大会上刷屏的东西在我们看来一点儿都不新鲜，变身智能家居遥控器这个问题知乎上已经...<span class="unfold">显示全部</span></dd>
+                             
+                        </dl>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img  src="../content/images/test/head-0.png"><!-- <label>23</label> --></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a><span class="fl col-gray">发布问题</span><span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+                            <dd class="clearfix">
+                                <a class="farm-img fl" href="question-detail.html"><img src="../content/images/test/farming-1.jpg"/> </a>
+                                <div class="farm-txt fl">
+                                    刚好今天我们的主题致信全刚好今天我们的主题就是这个，变身智能家居遥控器，开发独立的电话应用，
+                                    这些 Facebook ，经...<a target="_blank" href="question-detail.html" class="unfold">显示全部</a>
+                                </div>
+                            </dd>
+                            <dd class="col-gray">相关书籍：
+                            <a class="col-green-1" target="_blank" href="book-detail.html">《钢铁是怎么练成的》</a> 
+                            <a class="col-green-1" target="_blank" href="book-detail.html">《放风筝的人》</a></dd>
+                            <dd  class="more"><a href="#">+ 跟踪问题</a><a href="#">23个回答</a><a href="#">添加回答</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img  src="../content/images/test/head-0.png"><label>23</label></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a><span class="fl col-gray">回答问题</span><span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+                            <dd>刚好今天我们的主题就是这个，这个问题知乎上已经有过了，我们也采用了其中一个的回答。如何评价「辽宁日报致信全刚好今天我们的主题就是这个，变身智能家居遥控器，开发独立的电话应用，
+                                这些 Facebook F8 开发者大会上刷屏的东西在我们看来一点儿都不新鲜，变身智能家居遥控器这个问题知乎上已经...<a  target="_blank" href="question-detail.html"class="unfold">显示全部</a></dd>
+                            <dd class="col-gray">相关书籍：
+                            <a class="col-green-1" target="_blank" href="book-detail.html">《钢铁是怎么练成的》</a> 
+                            <a class="col-green-1" target="_blank" href="book-detail.html">《放风筝的人》</a></dd>
+                            <dd class="more">
+                                <a class="tracking-problem" href="javascript:;">+ 跟踪问题</a>
+                                <a href="#">23个回答</a>
+                                <a href="#">添加回答</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img  src="../content/images/test/head-0.png"><!-- <label>23</label> --></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a><span class="fl col-gray">发布问题</span><span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+                            <dd class="col-gray">相关书籍：
+                            <a class="col-green-1" target="_blank" href="book-detail.html">《钢铁是怎么练成的》</a> 
+                            <a class="col-green-1" target="_blank" href="book-detail.html">《放风筝的人》</a></dd>
+                            <dd  class="more">
+                                <a href="#">+ 跟踪问题</a>
+                                <a href="#">23个回答</a>
+                                <a href="#">添加回答</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img  src="../content/images/test/head-0.png"><label>23</label></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a><span class="fl col-gray"> 赞了回答</span><span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+                            <dd> <a class="fl reply-user" href="#">小乞丐子</a>刚好今天我们的主题就是这个，这个问题知乎上已经有过了，我们
+                                也采用了其中一个的回答。如何评价「辽宁日报致信全刚好今天我们的主题就是这个，变身智能家居遥控器，开发独立的电话应用，
+                                这些 Facebook F8 开发者大会上刷屏的东西在我们看来一点儿都不新鲜，变身智能家居遥控器这个问题知乎上已经..
+                                .<a target="_blank" href="question-detail.html" class="unfold">显示全部</a>
+                            </dd>
+
+                            <dd class="col-gray">相关书籍：
+                            <a class="col-green-1" target="_blank" href="book-detail.html">《钢铁是怎么练成的》</a> 
+                            <a class="col-green-1" target="_blank" href="book-detail.html">《放风筝的人》</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 问答 -->
+            <div class="j-bc-qaa" style="display:none;">
+                
+              <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"><!-- <label>23</label> --></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <!-- <span class="fl col-gray">发布问题</span> -->
+                            <span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+
+                            <!-- <dd class="col-gray">相关书籍：<a class="col-green-1" target="_blank" href="book-detail.html">《钢铁是怎么练成的》</a> <a class="col-green-1" target="_blank" href="book-detail.html">《放风筝的人》</a></dd> -->
+                            <dd class="more">
+                                <a class="tracking-problem" href="javascript:;">+ 跟踪问题</a>
+                                <a class="relay-list" href="javascript:;">23个回答</a>
+                                <!-- <a href="javascript:;">添加回答</a> -->
+                            </dd>
+                            <!-- 评论 -->
+                            <div class="reply-box">
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> 回复 <a class="col-green-1" target="_blank" href="my-home.html">粑粑</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span> <a class="col-gray" target="_blank" href="#"> 回复</a> </dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="txt" contenteditable="true"></div> 
+                                <div class="clearfix">
+                                    <a class="col-gray fl" target="_blank" href="javascript;"># 添加书籍</a>
+                                    <a class="btn-green fr" target="_blank" href="javascript:;">评论</a>
+                                </div>
+                                 <i class="reply-arrow"></i>
+                            </div>
+                        </dl>
+                    </div>
+              </div>
+              <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"><!-- <label>23</label> --></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <!-- <span class="fl col-gray">发布问题</span> -->
+                            <span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+
+                            <!-- <dd class="col-gray">相关书籍：<a class="col-green-1" target="_blank" href="book-detail.html">《钢铁是怎么练成的》</a> <a class="col-green-1" target="_blank" href="book-detail.html">《放风筝的人》</a></dd> -->
+                            <dd class="more">
+                                <a class="tracking-problem" href="javascript:;">+ 跟踪问题</a>
+                                <a class="relay-list" href="javascript:;">23个回答</a>
+                                <!-- <a href="javascript:;">添加回答</a> -->
+                            </dd>
+                            <!-- 评论 -->
+                            <div class="reply-box">
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> 回复 <a class="col-green-1" target="_blank" href="my-home.html">粑粑</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span> <a class="col-gray" target="_blank" href="#"> 回复</a> </dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="txt" contenteditable="true"></div> 
+                                <div class="clearfix">
+                                    <a class="col-gray fl" target="_blank" href="javascript;"># 添加书籍</a>
+                                    <a class="btn-green fr" target="_blank" href="javascript:;">评论</a>
+                                </div>
+                                 <i class="reply-arrow"></i>
+                            </div>
+                        </dl>
+                    </div>
+              </div>
+              <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"><!-- <label>23</label> --></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <!-- <span class="fl col-gray">发布问题</span> -->
+                            <span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+
+                            <!-- <dd class="col-gray">相关书籍：<a class="col-green-1" target="_blank" href="book-detail.html">《钢铁是怎么练成的》</a> <a class="col-green-1" target="_blank" href="book-detail.html">《放风筝的人》</a></dd> -->
+                            <dd class="more">
+                                <a class="tracking-problem" href="javascript:;">+ 跟踪问题</a>
+                                <a class="relay-list" href="javascript:;">23个回答</a>
+                                <!-- <a href="javascript:;">添加回答</a> -->
+                            </dd>
+                            <!-- 评论 -->
+                            <div class="reply-box">
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> 回复 <a class="col-green-1" target="_blank" href="my-home.html">粑粑</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span> <a class="col-gray" target="_blank" href="#"> 回复</a> </dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="txt" contenteditable="true"></div> 
+                                <div class="clearfix">
+                                    <a class="col-gray fl" target="_blank" href="javascript;"># 添加书籍</a>
+                                    <a class="btn-green fr" target="_blank" href="javascript:;">评论</a>
+                                </div>
+                                 <i class="reply-arrow"></i>
+                            </div>
+                        </dl>
+                    </div>
+              </div>
+              <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"><!-- <label>23</label> --></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <!-- <span class="fl col-gray">发布问题</span> -->
+                            <span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+
+                            <!-- <dd class="col-gray">相关书籍：<a class="col-green-1" target="_blank" href="book-detail.html">《钢铁是怎么练成的》</a> <a class="col-green-1" target="_blank" href="book-detail.html">《放风筝的人》</a></dd> -->
+                            <dd class="more">
+                                <a class="tracking-problem" href="javascript:;">+ 跟踪问题</a>
+                                <a class="relay-list" href="javascript:;">23个回答</a>
+                                <!-- <a href="javascript:;">添加回答</a> -->
+                            </dd>
+                            <!-- 评论 -->
+                            <div class="reply-box">
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> 回复 <a class="col-green-1" target="_blank" href="my-home.html">粑粑</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span> <a class="col-gray" target="_blank" href="#"> 回复</a> </dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="txt" contenteditable="true"></div> 
+                                <div class="clearfix">
+                                    <a class="col-gray fl" target="_blank" href="javascript;"># 添加书籍</a>
+                                    <a class="btn-green fr" target="_blank" href="javascript:;">评论</a>
+                                </div>
+                                 <i class="reply-arrow"></i>
+                            </div>
+                        </dl>
+                    </div>
+              </div>
+              <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"><!-- <label>23</label> --></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <!-- <span class="fl col-gray">发布问题</span> -->
+                            <span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+
+                            <!-- <dd class="col-gray">相关书籍：<a class="col-green-1" target="_blank" href="book-detail.html">《钢铁是怎么练成的》</a> <a class="col-green-1" target="_blank" href="book-detail.html">《放风筝的人》</a></dd> -->
+                            <dd class="more">
+                                <a class="tracking-problem" href="javascript:;">+ 跟踪问题</a>
+                                <a class="relay-list" href="javascript:;">23个回答</a>
+                                <!-- <a href="javascript:;">添加回答</a> -->
+                            </dd>
+                            <!-- 评论 -->
+                            <div class="reply-box">
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> 回复 <a class="col-green-1" target="_blank" href="my-home.html">粑粑</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span> <a class="col-gray" target="_blank" href="#"> 回复</a> </dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="txt" contenteditable="true"></div> 
+                                <div class="clearfix">
+                                    <a class="col-gray fl" target="_blank" href="javascript;"># 添加书籍</a>
+                                    <a class="btn-green fr" target="_blank" href="javascript:;">评论</a>
+                                </div>
+                                 <i class="reply-arrow"></i>
+                            </div>
+                        </dl>
+                    </div>
+              </div>
+              <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"><!-- <label>23</label> --></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <!-- <span class="fl col-gray">发布问题</span> -->
+                            <span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+
+                            <!-- <dd class="col-gray">相关书籍：<a class="col-green-1" target="_blank" href="book-detail.html">《钢铁是怎么练成的》</a> <a class="col-green-1" target="_blank" href="book-detail.html">《放风筝的人》</a></dd> -->
+                            <dd class="more">
+                                <a class="tracking-problem" href="javascript:;">+ 跟踪问题</a>
+                                <a class="relay-list" href="javascript:;">23个回答</a>
+                                <!-- <a href="javascript:;">添加回答</a> -->
+                            </dd>
+                            <!-- 评论 -->
+                            <div class="reply-box">
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> 回复 <a class="col-green-1" target="_blank" href="my-home.html">粑粑</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span> <a class="col-gray" target="_blank" href="#"> 回复</a> </dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="txt" contenteditable="true"></div> 
+                                <div class="clearfix">
+                                    <a class="col-gray fl" target="_blank" href="javascript;"># 添加书籍</a>
+                                    <a class="btn-green fr" target="_blank" href="javascript:;">评论</a>
+                                </div>
+                                 <i class="reply-arrow"></i>
+                            </div>
+                        </dl>
+                    </div>
+              </div>
+              <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"><!-- <label>23</label> --></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <!-- <span class="fl col-gray">发布问题</span> -->
+                            <span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+
+                            <!-- <dd class="col-gray">相关书籍：<a class="col-green-1" target="_blank" href="book-detail.html">《钢铁是怎么练成的》</a> <a class="col-green-1" target="_blank" href="book-detail.html">《放风筝的人》</a></dd> -->
+                            <dd class="more">
+                                <a class="tracking-problem" href="javascript:;">+ 跟踪问题</a>
+                                <a class="relay-list" href="javascript:;">23个回答</a>
+                                <!-- <a href="javascript:;">添加回答</a> -->
+                            </dd>
+                            <!-- 评论 -->
+                            <div class="reply-box">
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> 回复 <a class="col-green-1" target="_blank" href="my-home.html">粑粑</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span> <a class="col-gray" target="_blank" href="#"> 回复</a> </dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="txt" contenteditable="true"></div> 
+                                <div class="clearfix">
+                                    <a class="col-gray fl" target="_blank" href="javascript;"># 添加书籍</a>
+                                    <a class="btn-green fr" target="_blank" href="javascript:;">评论</a>
+                                </div>
+                                 <i class="reply-arrow"></i>
+                            </div>
+                        </dl>
+                    </div>
+              </div>
+              <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"><!-- <label>23</label> --></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <!-- <span class="fl col-gray">发布问题</span> -->
+                            <span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+
+                            <!-- <dd class="col-gray">相关书籍：<a class="col-green-1" target="_blank" href="book-detail.html">《钢铁是怎么练成的》</a> <a class="col-green-1" target="_blank" href="book-detail.html">《放风筝的人》</a></dd> -->
+                            <dd class="more">
+                                <a class="tracking-problem" href="javascript:;">+ 跟踪问题</a>
+                                <a class="relay-list" href="javascript:;">23个回答</a>
+                                <!-- <a href="javascript:;">添加回答</a> -->
+                            </dd>
+                            <!-- 评论 -->
+                            <div class="reply-box">
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> 回复 <a class="col-green-1" target="_blank" href="my-home.html">粑粑</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span> <a class="col-gray" target="_blank" href="#"> 回复</a> </dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="txt" contenteditable="true"></div> 
+                                <div class="clearfix">
+                                    <a class="col-gray fl" target="_blank" href="javascript;"># 添加书籍</a>
+                                    <a class="btn-green fr" target="_blank" href="javascript:;">评论</a>
+                                </div>
+                                 <i class="reply-arrow"></i>
+                            </div>
+                        </dl>
+                    </div>
+              </div>
+              <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"><!-- <label>23</label> --></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <!-- <span class="fl col-gray">发布问题</span> -->
+                            <span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+
+                            <!-- <dd class="col-gray">相关书籍：<a class="col-green-1" target="_blank" href="book-detail.html">《钢铁是怎么练成的》</a> <a class="col-green-1" target="_blank" href="book-detail.html">《放风筝的人》</a></dd> -->
+                            <dd class="more">
+                                <a class="tracking-problem" href="javascript:;">+ 跟踪问题</a>
+                                <a class="relay-list" href="javascript:;">23个回答</a>
+                                <!-- <a href="javascript:;">添加回答</a> -->
+                            </dd>
+                            <!-- 评论 -->
+                            <div class="reply-box">
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> 回复 <a class="col-green-1" target="_blank" href="my-home.html">粑粑</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span> <a class="col-gray" target="_blank" href="#"> 回复</a> </dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="txt" contenteditable="true"></div> 
+                                <div class="clearfix">
+                                    <a class="col-gray fl" target="_blank" href="javascript;"># 添加书籍</a>
+                                    <a class="btn-green fr" target="_blank" href="javascript:;">评论</a>
+                                </div>
+                                 <i class="reply-arrow"></i>
+                            </div>
+                        </dl>
+                    </div>
+              </div>
+              <div class="question-box">
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"><!-- <label>23</label> --></a>
+                    <div class="q-info">
+                        <div class="clearfix">
+                            <a class="fl col-green-1" target="_blank" href="my-home.html">一四狗歌</a>
+                            <!-- <span class="fl col-gray">发布问题</span> -->
+                            <span class="fr col-gray">34分钟前</span>
+                        </div>
+                        <dl>
+                            <dt><a target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
+
+                            <!-- <dd class="col-gray">相关书籍：<a class="col-green-1" target="_blank" href="book-detail.html">《钢铁是怎么练成的》</a> <a class="col-green-1" target="_blank" href="book-detail.html">《放风筝的人》</a></dd> -->
+                            <dd class="more">
+                                <a class="tracking-problem" href="javascript:;">+ 跟踪问题</a>
+                                <a class="relay-list" href="javascript:;">23个回答</a>
+                                <!-- <a href="javascript:;">添加回答</a> -->
+                            </dd>
+                            <!-- 评论 -->
+                            <div class="reply-box">
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt class="col-gray"><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> 回复 <a class="col-green-1" target="_blank" href="my-home.html">粑粑</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span> <a class="col-gray" target="_blank" href="#"> 回复</a> </dd>
+                                    </dl>
+                                </div>
+                                <div class="item">
+                                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-2.png"></a>
+                                    <dl>
+                                        <dt><a class="col-green-1" target="_blank" href="my-home.html">汉堡答</a> </dt>
+                                        <dd>吸引传统媒体入驻，开放通讯应用SDK，变身智能家居遥控器，开发独立的电话应用，这些 Facebook F8 Facebook Messenger
+                                            在转账和电商上的动作，一切都使人觉得，Facebook 最近做的，就是在复制以复制见长的腾讯...   </dd>
+                                        <dd><span class="col-gray">2015-2-2</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="txt" contenteditable="true"></div> 
+                                <div class="clearfix">
+                                    <a class="col-gray fl" target="_blank" href="javascript;"># 添加书籍</a>
+                                    <a class="btn-green fr" target="_blank" href="javascript:;">评论</a>
+                                </div>
+                                 <i class="reply-arrow"></i>
+                            </div>
+                        </dl>
+                    </div>
+              </div>
+            
+            </div>
+
+            <!-- 书籍列表 -->
+            <div class="j-bc-bookshelf"  style="display:none;">
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+                <div class="question-box book-item-box clearfix">
+                    <a class="fl book-item-img" target="_blank" href="book-detail.html">
+                        <img src="../content/images/test/book-2.jpg"> </a>
+                    <dl class="book-item-content">
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>[美]艾玛 </dd>
+                        <dd class="book-intro">雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学/雷米 / 推理 / 犯罪心理学 </dd>
+                    </dl>
+                    <div class="book-item-opt fr">
+                        <span class="ok"></span>  
+                        <span class="clock"></span>
+                        <span class="love"></span>
+                        <span class="shoping"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+ 
+        <!--右侧其它内容-->
+        <div id="other" class="fr">
+            <!-- <ul class="my-follow clearfix">
+                <li>
+                    <a href="#">11</a>
+                    <span>关注</span>
+                </li>
+                <li>
+                    <a href="#">11</a>
+                    <span>粉丝</span>
+                </li>
+                <li>
+                    <a href="#">11</a>
+                    <span>赞同</span>
+                </li>
+            </ul> -->
+
+            <div class="my-profession">
+                <p><span class="col-gray">性别：</span><span>女</span></p>
+                <p><span class="col-gray">职业：</span><span>教师</span></p>
+                <p><span class="col-gray">所在城市：</span><span>广州</span></p>
+                <p ><span class="teacher-tag">选书师 2</span></p>
+            </div>
+            <!-- <dl class="hot-answer">
+                <dt>最赞的回答</dt>
+                <dt class="title"><em>45</em><a href="" target="_blank">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a></dt>
+                <dd>刚好今天我们的主题就是这个，这个问题知乎上已经有过了，我们也采用了其中一个的回答。如何评价「辽宁日报致信全刚好今天我们的主题就是这个，
+                </dd>
+                
+            </dl> -->
+            <div class="other-item">
+                <strong class="f14">擅长、喜爱的书籍</strong>
+                <div class="tag-list">
+                    <a target="_blank" href="labels.html" class="tag">历史</a>
+                    <a target="_blank" href="labels.html" class="tag">推理</a>
+                    <a target="_blank" href="labels.html" class="tag">潮流文学</a>
+                    <a target="_blank" href="labels.html" class="tag">浪漫主义</a>
+                    <a target="_blank" href="labels.html" class="tag">互联网思维</a>
+                    <a target="_blank" href="labels.html" class="tag">自由</a>
+                </div>
+            </div>
+            <div class="other-item">
+                <strong class="f14">TA常提及的书</strong>
+                <div class="like-book">
+                    <a class="fl" target="_blank" href="book-detail.html"><img src="../content/images/test/book-2.jpg"/> </a>
+                    <dl>
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>艾玛</dd>
+                        <dd class="col-gray-deep">历史/推理/科技/国学/推理/科技/国学/推理/科技/国学</dd>
+                        <dd class="col-gray">提及23次</dd>
+                    </dl>
+                </div>
+                <div class="like-book">
+                    <a class="fl" target="_blank" href="book-detail.html"><img src="../content/images/test/book-2.jpg"/> </a>
+                    <dl>
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>艾玛</dd>
+                        <dd class="col-gray-deep">汉字，经常被认为是一种脱离语言基础的、直接表示概念的象形文字...</dd>
+                        <dd class="col-gray">2014-2-2</dd>
+                    </dl>
+                </div>
+                <div class="like-book no-border">
+                    <a class="fl" target="_blank" href="book-detail.html"><img src="../content/images/test/book-2.jpg"/> </a>
+                    <dl>
+                        <dt><a class="col-green-1" target="_blank" href="book-detail.html">《耐心美德》</a></dt>
+                        <dd>艾玛</dd>
+                        <dd class="col-gray-deep">汉字，经常被认为是一种脱离语言基础的、直接表示概念的象形文字...</dd>
+                        <dd class="col-gray">2014-2-2</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="two-code col-gray">
+                <p>书友交流群：216560849</p>
+                <p>@书田2015</p>
+                <img src="../content/images/twe-code.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="footer">
+        <ul>
+            <li><a href="#">书田行动</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">建议反馈</a></li>
+            <li><span>广州书田网络科技有限公司   鄂ICP备14013349号-2</span></li>
+        </ul>
+    </div>
+
+
+    <!-- 消息 -->
+    <div id="message" style="display:none;">
+        
+        <ul class="msg-nav" style="display:;">
+                <li id="li-answer">
+                    <em>话</em>
+                    <i>12</i>
+                    <div class="col-gray-deep">回答/评论/回复</div>
+                    <div class="col-gray-shoal">会飞的鱼评论了你在提问下</div>
+                </li>
+                <li id="li-approve">
+                    <em>赞</em>
+                    <i>12</i>
+                    <div>赞同</div>
+                    <div>会飞的鱼评论了你在提问下</div>
+                </li>
+                <li id="li-invite">
+                    <em>邀</em>
+                    <i>12</i>
+                    <div>邀请</div>
+                    <div>会飞的鱼评论了你在提问下</div>
+                </li>
+                <li id="li-attention">
+                    <em>关</em>
+                    <i>12</i>
+                    <div>关注</div>
+                    <div>会飞的鱼评论了你在提问下</div>
+                </li>
+                <li id="li-seed">
+                    <em>种</em>
+                    <div>种子</div>
+                    <div>会飞的鱼评论了你在提问下</div>
+                </li>
+        </ul>
+        
+        <div class="message-list" style="display:none;">
+            <div class="msg-top">
+                <span class="btn-green" id="btn-return">返回</span>
+            </div>
+            <ul class="answer-list">
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+               <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+               <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+            </ul>
+            <ul class="appro-list" style="display: none;">
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人赞同你的回答
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人赞同你的回答
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+               <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人赞同你的回答
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+            </ul>
+            <ul class="review-list" style="display: none;">
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人评论了你的问题
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人评论了你的问题
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+               <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人评论了你的问题
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+            </ul>
+            <dl class="attention-list" style="display: none;">
+                <dt>最近这些人关注了你</dt>
+                <dd>
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="info">
+                        <a class="" target="_blank" href="my-home.html">湿嗒嗒</a>
+                        <p>一句话的自我简介.111.......</p>
+                    </div>
+                </dd>
+                <dd>
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="info">
+                        <a class="" target="_blank" href="my-home.html">湿嗒嗒</a>
+                        <p>一句话的自我简介........</p>
+                    </div>
+                </dd>
+                <dd>
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="info">
+                        <a class="" target="_blank" href="my-home.html">湿嗒嗒</a>
+                        <p>一句话的自我简介........</p>
+                    </div>
+                </dd>
+                <dd>
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="info">
+                        <a class="" target="_blank" href="my-home.html">湿嗒嗒</a>
+                        <p>一句话的自我简介........</p>
+                    </div>
+                </dd>
+            </dl>
+            <ul class="seed-list">
+                <li class="row1">
+                    <p>恭喜你，连续登录3天获得3个种子。</p>
+                    <p>2015-1-1</p>
+                </li>
+                <li>
+                    获得<span class="col-green-1">212</span>个种子:<a href="my-home.html" target="_blank">小白</a>等123人认为你在提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>
+                    下的回答非常有种。
+                </li>
+                <li>
+                    获得<span class="col-green-1">212</span>个种子:<a href="my-home.html" target="_blank">小白</a>等123人认为你在提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>
+                    下的回答非常有种。
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 引入JS文件 -->
+    <script type="text/javascript" src="../content/js/jquery-1.11.2.min.js"></script>
+    <script src="../content/plugins/jquery.goup.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../content/js/common.js"></script>
+    <script>
+    $(function(){
+
+    $(".time-sort li").click(function(){
+    $(this).siblings("li").removeClass("current");
+    $(this).addClass("current");
+    });
+
+    })
+    </script>
+</body>
+
+</html>

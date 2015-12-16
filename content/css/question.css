@@ -1,0 +1,471 @@
+/***************************************************** 问答 ******************************************************/
+.head-question{
+    background-image:url("../images/question-bg.jpg");
+}
+.head-content{
+    width:820px;
+    margin:70px auto;
+    text-align: center;
+}
+.head-content h1{
+    color:#FFF;
+    font-size: 26px;
+    margin: 20px 0 40px 0;
+}
+.head-content div{color:#FFF; line-height: 30px;}
+
+.q-sort{
+    margin:20px -30px 20px 0;
+
+}
+.q-sort li{
+    float: left;
+    width:100px;
+    height: 100px;
+    background-color: #FFF;
+    border:1px solid #57AC68;
+    border-radius:100px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 100px;
+    color:#57AC68;
+    margin-right: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.q-sort .current{
+    color:#FFF;
+    background-color: #57AC68;
+}
+
+
+.question-box{
+    border-bottom: 1px dashed #E6E6E6;
+    padding:15px 0;
+}
+.question-box .user-head{}
+.q-info{
+    margin-left:50px;
+}
+.q-info dt a{
+    font-weight: bold;
+    font-size:14px;
+    color: #0C0C0C;
+    display: block;
+    margin-bottom: 10px;
+}
+.q-info dd{
+    margin-bottom:10px;
+    line-height:20px;
+}
+.q-info div{line-height: 25px;}
+.q-info div a{margin-right: 5px;}
+.q-info .more a{
+    color:#8E8E8E;
+    display: inline-block;
+    margin-right: 15px;
+}
+.q-info .more a:hover{
+    color:#0C0C0C;
+}
+
+
+.reply-box .item{
+    border-top:1px dashed #E4E4E4;
+    padding:10px 0;
+    line-height: 20px;
+}
+.reply-box dl{
+    margin-left:50px;
+}
+.reply-box dt a{
+    font-weight: normal;
+    color:#57AE69;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.reply-box dd{
+    margin-bottom: 5px;
+}
+.reply-box .txt{
+    width:100%;
+    margin-bottom: 10px;
+}
+ .reply-box .btn-box{
+    margin-top: 10px;
+    margin-bottom: 30px;
+ }
+ .btn-submit{
+    background-color: #57AE67;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px !important;
+    line-height: 30px !important;
+    min-width: 70px;
+    padding: 0 15px;
+    text-align: center;
+    font-size:14px;
+   
+ }
+  .btn-submit:hover{
+     text-decoration:none;
+  }
+
+  .btn-green-chase{
+    height: 30px !important;
+    padding: 0 15px;
+    min-width: 50px;
+    line-height: 30px !important;
+    text-align: center;
+    border: 0;
+    border-radius: 30px;
+    color: #FFF;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #57AD68;
+}
+.btn-green-chase.current{
+    background-color: #AAD8B3;
+}
+.chase-list {
+    margin: 15px 0;
+    font-size: 10px !important;
+    line-height: 35px;
+    color: #909090;
+}
+.chase-list a {
+    margin-right: 10px;
+}
+
+/***************************************************** 书籍详情页 ******************************************************/
+
+.head-detail{
+    background-image: url("../images/book-detail-bg.jpg");
+    height: 300px;
+}
+.h-content{
+    width:960px;
+    position: relative;
+    margin:0 auto;
+}
+.h-content .book-pic{
+    width:223px;
+    height:208px;
+    position: absolute;
+    right:10px;
+    top:50px;
+}
+.h-content dl{
+    width:630px;
+    height:180px;
+    padding:10px;
+    position: absolute;
+    left:0px;
+    top:50px;
+    color:#FFF;
+    z-index: 100;
+    overflow: hidden;
+}
+.h-content dt{
+    color:#FFF;
+    font-weight:bold;
+    line-height: 40px;
+    font-size: 19px;
+    height: 60px;
+}
+.h-content dd{
+    opacity: 1;
+    line-height: 24px;
+    color:#000;
+}
+
+/*.h-content ul{
+    position: absolute;
+    left: 485px;
+    top: 450px;
+}
+.h-content li{
+    width:30px;
+    height:30px;
+    float:left;
+    margin-right: 10px;
+}
+.h-content li a{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    background-image: url("../images/icons.png");
+}
+.h-content .i-love{
+      background-position: 0 0;
+  }
+.h-content .i-del{
+    background-position: -30px 0;
+}
+.h-content .i-mark{
+    background-position: -60px 0;
+}
+.h-content .i-time{
+    background-position: -90px 0;
+}
+.h-star{
+    width:140px;
+    padding:7px;
+    background-color: #FFF;
+    position: absolute;
+    left: 310px;
+    top: 450px;
+}*/
+
+.h-star span{
+   display: inline-block;
+    margin-left:5px;
+}
+.h-version{
+    position: absolute;
+    left:725px;
+    top:455px;
+}
+
+.book-version-list{
+    margin-right: -90px;
+    line-height: 24px;
+}
+.book-version-list li{
+    width:150px;
+    overflow:hidden;
+    float:left;
+    margin:15px 90px 30px 0;
+    color:#909090;
+}
+.book-version-list li a{
+    color:#0C0C0C;
+}
+
+#bookinfo{
+    line-height: 30px;
+}
+#bookinfo dt{
+    font-weight:bold;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+.low-price-list{
+    width:300px;
+    height:60px;
+    position: absolute;
+    top:300px;
+    right:-60px;
+}
+.low-price-list li{
+    float:left;
+    width:50px;
+    height:50px;
+    color:#FFF;
+    margin-left:10px;
+}
+
+.low-price-list li img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+.price-title{
+    position:absolute;
+    top:-35px;
+    left:10px;
+    color:#DDD;
+}
+
+.friend-item div{
+    height: 22px;
+    line-height: 20px;
+}
+.friend-item .col-gray{
+    margin-right: 110px;
+}
+.friend-item .btn-green{
+    margin-top: -35px;
+}
+.book-detail-tag-nav{
+    padding: 20px 0;
+}
+
+/***************************************************** 问答详情页 ******************************************************/
+
+.q-detail{
+    width:960px;
+    margin:0 auto;
+    color:#FFF;
+}
+.q-detail .d-left{
+    width:600px;
+    min-height:100px;
+    margin-top:240px;
+}
+.q-detail .d-left h1{
+    margin-bottom:15px;
+}
+.q-detail .d-left span{
+    display: inline-block;
+    height:35px;
+    line-height: 35px;
+    margin-left: 15px;
+}
+.q-detail .d-right{
+    width:265px;
+    min-height: 100px;
+    margin-top:200px;
+}
+.q-detail .d-right li{
+    float:left;
+    line-height:35px;
+    margin-left:3px;
+    margin-top:15px;
+}
+.q-detail .d-right span{
+    margin-left:15px;
+}
+.q-title{
+    font-size: 14px;
+    line-height: 22px;
+}
+.title-b{
+    line-height: 30px;
+    margin-top:15px;
+}
+.title-b a{
+    color: #8F8F8F;
+    font-size:12px;
+}
+.qd-detail{
+
+}
+
+.qd-detail .youcai{
+    width:50px;
+    height:28px;
+    background: url("../images/youcai.png");
+    cursor: pointer;
+}
+
+.qd-detail .youcai.current{
+    background-position:0 29px;
+}
+
+.qd-detail .youcai span{
+    margin-left: -40px;
+    line-height: 26px;
+}
+
+.qd-detail .user-head{
+    margin-left: -50px;
+}
+
+.qd-title{
+    color:#8F8F8F;
+}
+.qd-title a{
+    color:#57AE6A;
+}
+.qd-title p{
+    line-height: 22px;
+}
+.qd-content{
+    padding:5px 0;
+    font-size: 14px;
+    line-height: 22px;
+}
+.qb-bottom{
+    line-height: 30px;
+    color: #8F8F8F;
+}
+.qb-bottom a{
+    color: #8F8F8F;
+}
+.praise{
+    width:50%;
+    text-align: center;
+    float:left;
+}
+.praise span{
+    margin: 10px auto;
+
+}
+.praise label{display: block;}
+
+.like-book{
+    border-bottom: 1px dashed #ebebeb;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.like-book img{
+    width:60px;
+    height:80px;
+}
+.like-book dl{
+    margin-left:80px;
+    line-height: 20px;
+}
+.like-book:last-child{border:none;}
+
+
+.ui-book-box{
+    width:350px;
+    height:160px;
+    padding:4px;
+    border-radius: 3px;
+    box-shadow:1px 2px 11px #999; 
+    display:none; 
+    position:absolute; 
+    z-index: 1000; 
+    background-color: #FFF;
+}
+.ui-book-box img{
+    width:120px;
+    height:160px;
+}
+.ui-book-box dl{
+    margin-top: 15px;
+    margin-left:130px;
+    line-height: 22px;
+    width:210px;
+}
+.ui-book-box dt{
+    font-size: 16px;
+}
+.ui-book-box .corner{
+    display: block;
+    width:30px;
+    height:30px;
+    position: absolute;
+    left:-30px;
+    top:25px;
+    background-color: yellow;
+    opacity:0;
+}
+
+.book-list{
+    display: inline-block;
+    margin-top: 5px;
+}
+.book-list li{
+    float:left;
+    margin-right: 10px;
+}
+.book-list a{
+    display: block;
+    text-align: center;
+    color:#05925E;
+    line-height: 20px;
+}
+
+
+
+
+
+
+

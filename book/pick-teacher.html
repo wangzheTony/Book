@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8">
+    <title>选书师</title>
+    <link href="../content/css/base.css" type="text/css" rel="stylesheet">
+    <link href="../content/css/layout.css" type="text/css" rel="stylesheet">
+    <link href="../content/css/index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <!--顶部导航条-->
+    <div class="top-bar">
+        <a target="_blank" href="index.html"><img class="logo fl" src="../content/images/logo.png"/></a>
+        <div class="top-bar-content">
+            <ul class="top-bar-nav fl">
+                <li><a href="farming.html">耕</a></li>
+                <li><a href="index.html">书</a></li>
+                <li><a href="questions.html">寻</a></li>
+                <li><a class="current" href="pick-teacher.html">师</a></li>
+            </ul>
+        </div>
+        <!-- 搜索框 -->
+        <div class="fl search-box">
+            <input type="text" placeholder="书籍/选书人/评论..."/>
+            <span></span>
+        </div>
+        <ul class="top-bar-news fr">
+            <!-- 未登录 -->
+            <!-- <li>
+                <a class="unlogin" href="login.html">登录</a>
+            </li>
+            <li>
+                <a class="unlogin unregister" href="register.html">注册</a>
+            </li>  -->     
+            <!-- 已登录 -->  
+            <li id="top-bar-user">
+                    <a  href="my-home.html" target="_blank" ><img class="user-head" src="../content/images/test/head-0.png"/></a>
+                    <div class="user-setup" style="display:none;">
+                        <a href="my-setup.html" target="_blank">设置</a>
+                        <a href="javascript:;">退出</a>
+                    </div>
+            </li>
+            <li id="top-bar-message">
+            <span class="message_div"></span><a class="info msg" href="javascript:;" >12</a></li>
+            <li><a class="answer" href="quiz.html" target="_blank" >提问</a></li>
+        </ul>
+    </div>
+    
+    <!--横幅标题-->
+    <div class="head head-read pick-teacher-bg">
+        <div class="pick-t-box">
+            <div class="pick-title">
+                <b>选读一本书，打开一扇门</b>
+                <span class="span-r fl">为书友回答10个问题，获得100个赞，即可成为选书师。<br/>
+            </div>
+            <div class="first-user">
+                <span class="head-tag">今日之星</span>
+                <a href="my-home.html" target="_blank">
+                    <img src="../content/images/test/head-4.jpg">
+                </a>
+                <p>选书师：边缘人</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="container" class="clearfix">
+        <!--主体内容-->
+        <div id="content" class="fl ">
+            <div class="pick-nav clearfix">
+                <strong class="fl f18">选书师精选</strong>
+                <ul class=" clearfix fr">
+                    <li class="current">全部</li>
+                    <li>科技</li>
+                    <li>启蒙</li>
+                    <li>商业</li>
+                    <li>历史</li>
+                    <li>推理</li>
+                    <li>小说</li>
+                </ul>
+            </div>
+            <ul class="pick-list">
+                <li>
+                    <a href="my-home.html" target="_blanck">
+                        <img class="user-head" src="../content/images/test/head-2.png">
+                    </a>
+                    <dl>
+                        <dt>
+                            <a href="my-home.html" target="_blanck">天下我最大<em class="pick-book-teacher">选</em></a>
+                        </dt>
+                        <dd>擅长国学/教育/大学生/家教...</dd>
+                        <dd class="col-gray">获得123个赞</dd>
+                        <dd><a class="invite current" href="javascript:;">已邀请</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blanck">
+                        <img class="user-head" src="../content/images/test/head-2.png">
+                    </a>
+                    <dl>
+                        <dt>
+                            <a href="my-home.html" target="_blanck">天下我最大<em class="pick-book-teacher">选</em></a>
+                        </dt>
+                        <dd>擅长国学/教育/大学生/家教...</dd>
+                        <dd class="col-gray">获得123个赞</dd>
+                        <dd><a class="invite" href="javascript:;">邀请</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blanck">
+                        <img class="user-head" src="../content/images/test/head-2.png">
+                    </a>
+                    <dl>
+                        <dt>
+                            <a href="my-home.html" target="_blanck">天下我最大<em class="pick-book-teacher">选</em></a>
+                        </dt>
+                        <dd>擅长国学/教育/大学生/家教...</dd>
+                        <dd class="col-gray">获得123个赞</dd>
+                        <dd><a class="invite" href="javascript:;">邀请</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blanck">
+                        <img class="user-head" src="../content/images/test/head-2.png">
+                    </a>
+                    <dl>
+                        <dt>
+                            <a href="my-home.html" target="_blanck">天下我最大<em class="pick-book-teacher">选</em></a>
+                        </dt>
+                        <dd>擅长国学/教育/大学生/家教...</dd>
+                        <dd class="col-gray">获得123个赞</dd>
+                        <dd><a class="invite" href="javascript:;">邀请</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blanck">
+                        <img class="user-head" src="../content/images/test/head-2.png">
+                    </a>
+                    <dl>
+                        <dt>
+                            <a href="my-home.html" target="_blanck">天下我最大<em class="pick-book-teacher">选</em></a>
+                        </dt>
+                        <dd>擅长国学/教育/大学生/家教...</dd>
+                        <dd class="col-gray">获得123个赞</dd>
+                        <dd><a class="invite" href="javascript:;">邀请</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blanck">
+                        <img class="user-head" src="../content/images/test/head-2.png">
+                    </a>
+                    <dl>
+                        <dt>
+                            <a href="my-home.html" target="_blanck">天下我最大<em class="pick-book-teacher">选</em></a>
+                        </dt>
+                        <dd>擅长国学/教育/大学生/家教...</dd>
+                        <dd class="col-gray">获得123个赞</dd>
+                        <dd><a class="invite" href="javascript:;">邀请</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blanck">
+                        <img class="user-head" src="../content/images/test/head-2.png">
+                    </a>
+                    <dl>
+                        <dt>
+                            <a href="my-home.html" target="_blanck">天下我最大<em class="pick-book-teacher">选</em></a>
+                        </dt>
+                        <dd>擅长国学/教育/大学生/家教...</dd>
+                        <dd class="col-gray">获得123个赞</dd>
+                        <dd><a class="invite" href="javascript:;">邀请</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blanck">
+                        <img class="user-head" src="../content/images/test/head-2.png">
+                    </a>
+                    <dl>
+                        <dt>
+                            <a href="my-home.html" target="_blanck">天下我最大<em class="pick-book-teacher">选</em></a>
+                        </dt>
+                        <dd>擅长国学/教育/大学生/家教...</dd>
+                        <dd class="col-gray">获得123个赞</dd>
+                        <dd><a class="invite" href="javascript:;">邀请</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blanck">
+                        <img class="user-head" src="../content/images/test/head-2.png">
+                    </a>
+                    <dl>
+                        <dt>
+                            <a href="my-home.html" target="_blanck">天下我最大<em class="pick-book-teacher">选</em></a>
+                        </dt>
+                        <dd>擅长国学/教育/大学生/家教...</dd>
+                        <dd class="col-gray">获得123个赞</dd>
+                        <dd><a class="invite" href="javascript:;">邀请</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blanck">
+                        <img class="user-head" src="../content/images/test/head-2.png">
+                    </a>
+                    <dl>
+                        <dt>
+                            <a href="my-home.html" target="_blanck">天下我最大<em class="pick-book-teacher">选</em></a>
+                        </dt>
+                        <dd>擅长国学/教育/大学生/家教...</dd>
+                        <dd class="col-gray">获得123个赞</dd>
+                        <dd><a class="invite" href="javascript:;">邀请</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blanck">
+                        <img class="user-head" src="../content/images/test/head-2.png">
+                    </a>
+                    <dl>
+                        <dt>
+                            <a href="my-home.html" target="_blanck">天下我最大<em class="pick-book-teacher">选</em></a>
+                        </dt>
+                        <dd>擅长国学/教育/大学生/家教...</dd>
+                        <dd class="col-gray">获得123个赞</dd>
+                        <dd><a class="invite" href="javascript:;">邀请</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+        <!--右侧其它内容-->
+        <div id="other" class="fr">
+            
+            <div class="other-item">
+                <strong class="f14">新晋选书师</strong>
+                <div class="men-info">
+                    <a class="fl" target="_blank" href="my-home.html"><img class="user-head" src="../content/images/test/head-0.png"/> </a>
+                    <div class="men-right">
+                        <a class="col-green-1" target="_blank" href="my-home.html">吃苹果的这个人</a>
+                        <p class="col-gray-deep">擅长国学/历史/教育/军事/心理</p>
+                        <p class="col-gray">12个回答 &nbsp;&nbsp; 获得123个赞</p>
+                        <a class="btn-green" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="men-info">
+                    <a class="fl" target="_blank" href="my-home.html"><img class="user-head" src="../content/images/test/head-0.png"/> </a>
+                    <div class="men-right">
+                        <a class="col-green-1" target="_blank" href="my-home.html">吃苹果的这个人<em class="pick-book-teacher">选</em></a>
+                        <p class="col-gray-deep">擅长国学/历史/教育/军事/心理</p>
+                        <p class="col-gray">12个回答 &nbsp;&nbsp; 获得123个赞</p>
+                        <a class="btn-green" href="javascript:;">关注</a>
+                    </div>
+                </div>
+                <div class="men-info">
+                    <a class="fl" target="_blank" href="my-home.html"><img class="user-head" src="../content/images/test/head-0.png"/> </a>
+                    <div class="men-right">
+                        <a class="col-green-1" target="_blank" href="my-home.html">吃苹果的这个人</a>
+                        <p class="col-gray-deep">擅长国学/历史/教育/军事/心理</p>
+                        <p class="col-gray">12个回答 &nbsp;&nbsp; 获得123个赞</p>
+                        <a class="btn-green" href="javascript:;">关注</a>
+                    </div>
+                </div>
+            </div>
+            <div class="two-code col-gray">
+                <p>书友交流群：216560849</p>
+                <p>新浪微博：@书田行动</p>
+                <img src="../content/images/twe-code.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="footer">
+        <ul>
+            <li><a href="#">书田行动</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">建议反馈</a></li>
+            <li><span>广州书田网络科技有限公司   鄂ICP备14013349号-2</span></li>
+        </ul>
+    </div>
+
+    <!-- 消息 -->
+    <div id="message" style="display:none;">
+        
+        <ul class="msg-nav" style="display:;">
+                <li id="li-answer">
+                    <em>话</em>
+                    <i>12</i>
+                    <div class="col-gray-deep">回答/评论/回复</div>
+                    <div class="col-gray-shoal">会飞的鱼评论了你在提问下</div>
+                </li>
+                <li id="li-approve">
+                    <em>赞</em>
+                    <i>12</i>
+                    <div>赞同</div>
+                    <div>会飞的鱼评论了你在提问下</div>
+                </li>
+                <li id="li-invite">
+                    <em>邀</em>
+                    <i>12</i>
+                    <div>邀请</div>
+                    <div>会飞的鱼评论了你在提问下</div>
+                </li>
+                <li id="li-attention">
+                    <em>关</em>
+                    <i>12</i>
+                    <div>关注</div>
+                    <div>会飞的鱼评论了你在提问下</div>
+                </li>
+                <li id="li-seed">
+                    <em>种</em>
+                    <div>种子</div>
+                    <div>会飞的鱼评论了你在提问下</div>
+                </li>
+        </ul>
+        
+        
+        <div class="message-list" style="display:none;">
+            <div class="msg-top">
+                <span class="btn-green" id="btn-return">返回</span>
+            </div>
+            <ul class="answer-list">
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+               <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+               <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人回答了你的提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+            </ul>
+            <ul class="appro-list" style="display: none;">
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人赞同你的回答
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人赞同你的回答
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+               <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人赞同你的回答
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+            </ul>
+            <ul class="review-list" style="display: none;">
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人评论了你的问题
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+                <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人评论了你的问题
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+               <li>
+                    <a href="my-home.html" target="_blank">小白</a>,
+                     <a href="my-home.html" target="_blank">小白</a>,
+                   <a href="my-home.html" target="_blank">小白</a>,
+                    等23人评论了你的问题
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>,
+                </li>
+            </ul>
+            <dl class="attention-list" style="display: none;">
+                <dt>最近这些人关注了你</dt>
+                <dd>
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="info">
+                        <a class="" target="_blank" href="my-home.html">湿嗒嗒</a>
+                        <p>一句话的自我简介.111.......</p>
+                    </div>
+                </dd>
+                <dd>
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="info">
+                        <a class="" target="_blank" href="my-home.html">湿嗒嗒</a>
+                        <p>一句话的自我简介........</p>
+                    </div>
+                </dd>
+                <dd>
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="info">
+                        <a class="" target="_blank" href="my-home.html">湿嗒嗒</a>
+                        <p>一句话的自我简介........</p>
+                    </div>
+                </dd>
+                <dd>
+                    <a class="user-head fl" target="_blank" href="my-home.html"><img src="../content/images/test/head-0.png"></a>
+                    <div class="info">
+                        <a class="" target="_blank" href="my-home.html">湿嗒嗒</a>
+                        <p>一句话的自我简介........</p>
+                    </div>
+                </dd>
+            </dl>
+            <ul class="seed-list">
+                <li class="row1">
+                    <p>恭喜你，连续登录3天获得3个种子。</p>
+                    <p>2015-1-1</p>
+                </li>
+                <li>
+                    获得<span class="col-green-1">212</span>个种子:<a href="my-home.html" target="_blank">小白</a>等123人认为你在提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>
+                    下的回答非常有种。
+                </li>
+                <li>
+                    获得<span class="col-green-1">212</span>个种子:<a href="my-home.html" target="_blank">小白</a>等123人认为你在提问
+                    <a href="question-detail.html" target="_blank">我非常有才华，怎么让一个VC来投资我？</a>
+                    下的回答非常有种。
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../content/js/jquery-1.11.2.min.js"></script>
+    <script src="../content/plugins/jquery.goup.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../content/js/common.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $(".pick-nav li").click(function(){
+            $(this).parent().find(".current").removeClass("current");
+            $(this).addClass("current");
+        });
+
+        $(".pick-list li").mouseover(function(){
+            $(this).find('.invite').css("display","inline-block");
+            $(this).addClass("current");
+        }).mouseleave(function(){
+            $(this).find('.invite').css("display","none");
+            $(this).removeClass("current");
+        });
+
+    });
+    </script>
+</body>
+
+</html>
