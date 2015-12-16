@@ -14,10 +14,14 @@
         <a href="farming.html"><img class="logo fl" src="../content/images/logo.png"/></a>
         <div class="top-bar-content">
             <ul class="top-bar-nav fl">
-                <li><a class="current" href="farming.html">书</a></li>
+                <li>
+                    <a class="current" href="farming.html">书</a>
+                </li>
                 <!-- <li><a href="index.html">书</a></li> -->
                 <!-- <li><a href="questions.html">寻</a></li> -->
-                <li><a href="community.html">田</a></li>
+                <li>
+                    <a href="community.html">田</a>
+                </li>
             </ul>
         </div>
         <!-- 搜索框 -->
@@ -32,9 +36,10 @@
                 <!-- 登录窗口 -->
                 <div class="login-box j-login-box" id="login-box" style="display:none;">
                     <form action="">
-                        <p><label>
-                            <input ng-model="user.userName" class="j-user-name"
-                             type="text" placeholder="笔名/邮箱"></label>
+                        <p>
+                            <label>
+                                <input ng-model="user.userName" class="j-user-name" type="text" placeholder="笔名/邮箱">
+                            </label>
                         </p>
                         <p><label>
                             <input ng-model="user.userPwd" class="err j-user-pwd"
@@ -81,8 +86,12 @@
                     </div>
             </li> -->
             <li id="top-bar-message">
-            <span class="message_div"></span><a class="info msg" href="javascript:;" >12</a></li>
-            <li><a class="answer" href="quiz.html" target="_blank" >提问</a></li>
+                <span class="message_div"></span>
+                <a class="info msg" href="javascript:;" >12</a>
+            </li>
+            <li>
+                <a class="answer" href="quiz.html" target="_blank" >提问</a>
+            </li>
         </ul>
     </div>
     
@@ -98,10 +107,19 @@
             </ol>
             <ul class="clearfix">
                 <li>
-                    <a class="fl" href="book-detail.html" target="_blank"><img  src="../content/images/test/book-2.jpg"></a>
+                    <a class="fl" href="book-detail.html" target="_blank">
+                        <img  src="../content/images/test/book-2.jpg">
+                    </a>
                     <dl>
-                        <dt><a href="#" target="_blank">《耐心美德》</a></dt>
-                        <dd> 维克多雨果 <span class="col-gray-deep">著</span></dd>
+                        <dt>
+                            <a href="#" target="_blank">《耐心美德》</a>
+                        </dt>
+                        <dd>
+                            维克多雨果
+                            <span class="col-gray-deep">
+                                著
+                            </span>
+                        </dd>
                         <dd class="col-gray-deep">共有222条提问</dd>
                     </dl>
                     <div class="opt">
@@ -112,11 +130,22 @@
                     </div>
                 </li>
                 <li>
-                    <a class="fl" href="book-detail.html" target="_blank"><img  src="../content/images/test/book-2.jpg"></a>
+                    <a class="fl" href="book-detail.html" target="_blank">
+                        <img  src="../content/images/test/book-2.jpg">
+                    </a>
                     <dl>
-                        <dt><a href="#" target="_blank">《耐心美德》</a></dt>
-                        <dd> 维克多雨果 <span class="col-gray-deep">著</span></dd>
-                        <dd class="col-gray-deep">共有222条提问</dd>
+                        <dt>
+                            <a href="#" target="_blank">《耐心美德》</a>
+                        </dt>
+                        <dd> 
+                            维克多雨果 
+                            <span class="col-gray-deep">
+                                著
+                            </span>
+                        </dd>
+                        <dd class="col-gray-deep">
+                            共有222条提问
+                        </dd>
                     </dl>
                     <div class="opt">
                         <span class="ok"></span>  
@@ -172,7 +201,14 @@
                     <a class="user-head fl" target="_blank" target="_blank" href="my-home.html"><img  src="../content/images/test/head-0.png"><!-- <label>23</label> --></a>
                     <div class="q-info">
                         <div class="clearfix">
-                            <a class="fl col-green-1" target="_blank" target="_blank" href="my-home.html">一四狗歌</a><span class="fl col-gray">发布问题</span><span class="fr col-gray">34分钟前</span>
+                            <a class="fl col-green-1" target="_blank" target="_blank" href="my-home.html">      一四狗歌
+                            </a>
+                            <span class="fl col-gray">
+                                发布问题
+                            </span>
+                            <span class="fr col-gray">
+                                34分钟前
+                            </span>
                         </div>
                         <dl>
                             <dt><a target="_blank" target="_blank" href="question-detail.html">在《红楼梦》这部文学名著中，你如何评价林黛玉？</a> </dt>
@@ -228,6 +264,7 @@
                         </dl>
                     </div>
                 </div>
+
                 <div class="question-box">
                     <a class="user-head fl" target="_blank" href="my-home.html"><img  src="../content/images/test/head-0.png"><label>23</label></a>
                     <div class="q-info">
@@ -257,6 +294,7 @@
                         </dl>
                     </div>
                 </div>
+                
                 <div class="question-box">
                     <a class="user-head fl" target="_blank" href="my-home.html"><img  src="../content/images/test/head-0.png"><label>23</label></a>
                     <div class="q-info">
@@ -607,19 +645,26 @@
             <!-- 跟踪的问题 -->
             <div class="j-bc-question" style="display:none;">
                   
-              <div class="question-box" ng-repeat="q in question_list">
-                    <a class="user-head fl" target="_blank" href="{{q.userUrl}}"><img src="{{q.imgUrl}}">
+              <div class="question-box" data-bind="foreach: question_list">
+                    <a class="user-head fl" target="_blank" data-bind="attr: {src: userUrl}">
+                        <img data-bind="attr: {src: imgUrl}">
                     </a>
                     <div class="q-info">
                         <div class="clearfix">
-                            <a class="fl col-green-1" target="_blank" href="{{q.userUrl}">{{q.userName}}</a>
-                            <span class="fr col-gray">{{q.time}}</span>
+                            <a class="fl col-green-1" target="_blank" data-bind="attr: {src: userUrl}">
+                                <!--ko text: userName--><!-- /ko -->
+                            </a>
+                            <span class="fr col-gray"><!--ko text: time--><!-- /ko --></span>
                         </div>  
                         <dl>
-                            <dt><a target="_blank" href="{{q.url}}">{{q.title}}</a> </dt>
+                            <dt><a target="_blank" href="{{q.url}}"><!--ko text: title--><!-- /ko --></a> </dt>
                             <dd class="more">
-                                <a class="tracking-problem" href="javascript:;">+ 跟踪问题</a>
-                                <a class="relay-list" href="javascript:;">23个回答</a>
+                                <a class="tracking-problem" href="javascript:;">
+                                    + 跟踪问题
+                                </a>
+                                <a class="relay-list" href="javascript:;">
+                                    23个回答
+                                </a>
                             </dd>
    
                             <!-- 评论 -->
@@ -2124,8 +2169,10 @@
     </div>
     
     <script src="../content/js/jquery-1.11.2.min.js"></script>
-    <script src="../content/js/angular.min.js"></script>
+    <!-- // <script src="../content/js/angular.min.js"></script> -->
     <script src="../content/plugins/jquery.goup.js"></script>
+    <script type="text/javascript" src="../bower_components/knockout/dist/knockout.js"></script>
+
     <script src="../content/js/common.js"></script>
     <script src="../content/js/farm/farming.js"></script>
     
